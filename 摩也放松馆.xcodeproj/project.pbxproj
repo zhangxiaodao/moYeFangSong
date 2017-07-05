@@ -1,0 +1,521 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ED65E0A01F0CD1EA00EE1F20 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ED65E09F1F0CD1EA00EE1F20 /* main.m */; };
+		ED65E0A31F0CD1EA00EE1F20 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ED65E0A21F0CD1EA00EE1F20 /* AppDelegate.m */; };
+		ED65E0A51F0CD1EA00EE1F20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED65E0A41F0CD1EA00EE1F20 /* Assets.xcassets */; };
+		ED65E0A81F0CD1EA00EE1F20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED65E0A61F0CD1EA00EE1F20 /* LaunchScreen.storyboard */; };
+		ED65E0B31F0CD1EA00EE1F20 /* _____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = ED65E0B21F0CD1EA00EE1F20 /* _____Tests.m */; };
+		ED65E0BE1F0CD1EA00EE1F20 /* _____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = ED65E0BD1F0CD1EA00EE1F20 /* _____UITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ED65E0AF1F0CD1EA00EE1F20 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ED65E0931F0CD1EA00EE1F20 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ED65E09A1F0CD1EA00EE1F20;
+			remoteInfo = "摩也放松馆";
+		};
+		ED65E0BA1F0CD1EA00EE1F20 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ED65E0931F0CD1EA00EE1F20 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ED65E09A1F0CD1EA00EE1F20;
+			remoteInfo = "摩也放松馆";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ED65E09B1F0CD1EA00EE1F20 /* 摩也放松馆.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "摩也放松馆.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED65E09F1F0CD1EA00EE1F20 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		ED65E0A11F0CD1EA00EE1F20 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		ED65E0A21F0CD1EA00EE1F20 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		ED65E0A41F0CD1EA00EE1F20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ED65E0A71F0CD1EA00EE1F20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ED65E0A91F0CD1EA00EE1F20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED65E0AE1F0CD1EA00EE1F20 /* 摩也放松馆Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "摩也放松馆Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED65E0B21F0CD1EA00EE1F20 /* _____Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_____Tests.m"; sourceTree = "<group>"; };
+		ED65E0B41F0CD1EA00EE1F20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED65E0B91F0CD1EA00EE1F20 /* 摩也放松馆UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "摩也放松馆UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED65E0BD1F0CD1EA00EE1F20 /* _____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_____UITests.m"; sourceTree = "<group>"; };
+		ED65E0BF1F0CD1EA00EE1F20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ED65E0981F0CD1EA00EE1F20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED65E0AB1F0CD1EA00EE1F20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED65E0B61F0CD1EA00EE1F20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ED65E0921F0CD1EA00EE1F20 = {
+			isa = PBXGroup;
+			children = (
+				ED65E09D1F0CD1EA00EE1F20 /* 摩也放松馆 */,
+				ED65E0B11F0CD1EA00EE1F20 /* 摩也放松馆Tests */,
+				ED65E0BC1F0CD1EA00EE1F20 /* 摩也放松馆UITests */,
+				ED65E09C1F0CD1EA00EE1F20 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ED65E09C1F0CD1EA00EE1F20 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ED65E09B1F0CD1EA00EE1F20 /* 摩也放松馆.app */,
+				ED65E0AE1F0CD1EA00EE1F20 /* 摩也放松馆Tests.xctest */,
+				ED65E0B91F0CD1EA00EE1F20 /* 摩也放松馆UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ED65E09D1F0CD1EA00EE1F20 /* 摩也放松馆 */ = {
+			isa = PBXGroup;
+			children = (
+				ED65E0A11F0CD1EA00EE1F20 /* AppDelegate.h */,
+				ED65E0A21F0CD1EA00EE1F20 /* AppDelegate.m */,
+				ED65E0A41F0CD1EA00EE1F20 /* Assets.xcassets */,
+				ED65E0A61F0CD1EA00EE1F20 /* LaunchScreen.storyboard */,
+				ED65E0A91F0CD1EA00EE1F20 /* Info.plist */,
+				ED65E09E1F0CD1EA00EE1F20 /* Supporting Files */,
+			);
+			path = "摩也放松馆";
+			sourceTree = "<group>";
+		};
+		ED65E09E1F0CD1EA00EE1F20 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ED65E09F1F0CD1EA00EE1F20 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ED65E0B11F0CD1EA00EE1F20 /* 摩也放松馆Tests */ = {
+			isa = PBXGroup;
+			children = (
+				ED65E0B21F0CD1EA00EE1F20 /* _____Tests.m */,
+				ED65E0B41F0CD1EA00EE1F20 /* Info.plist */,
+			);
+			path = "摩也放松馆Tests";
+			sourceTree = "<group>";
+		};
+		ED65E0BC1F0CD1EA00EE1F20 /* 摩也放松馆UITests */ = {
+			isa = PBXGroup;
+			children = (
+				ED65E0BD1F0CD1EA00EE1F20 /* _____UITests.m */,
+				ED65E0BF1F0CD1EA00EE1F20 /* Info.plist */,
+			);
+			path = "摩也放松馆UITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ED65E09A1F0CD1EA00EE1F20 /* 摩也放松馆 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED65E0C21F0CD1EA00EE1F20 /* Build configuration list for PBXNativeTarget "摩也放松馆" */;
+			buildPhases = (
+				ED65E0971F0CD1EA00EE1F20 /* Sources */,
+				ED65E0981F0CD1EA00EE1F20 /* Frameworks */,
+				ED65E0991F0CD1EA00EE1F20 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "摩也放松馆";
+			productName = "摩也放松馆";
+			productReference = ED65E09B1F0CD1EA00EE1F20 /* 摩也放松馆.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ED65E0AD1F0CD1EA00EE1F20 /* 摩也放松馆Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED65E0C51F0CD1EA00EE1F20 /* Build configuration list for PBXNativeTarget "摩也放松馆Tests" */;
+			buildPhases = (
+				ED65E0AA1F0CD1EA00EE1F20 /* Sources */,
+				ED65E0AB1F0CD1EA00EE1F20 /* Frameworks */,
+				ED65E0AC1F0CD1EA00EE1F20 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ED65E0B01F0CD1EA00EE1F20 /* PBXTargetDependency */,
+			);
+			name = "摩也放松馆Tests";
+			productName = "摩也放松馆Tests";
+			productReference = ED65E0AE1F0CD1EA00EE1F20 /* 摩也放松馆Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ED65E0B81F0CD1EA00EE1F20 /* 摩也放松馆UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED65E0C81F0CD1EA00EE1F20 /* Build configuration list for PBXNativeTarget "摩也放松馆UITests" */;
+			buildPhases = (
+				ED65E0B51F0CD1EA00EE1F20 /* Sources */,
+				ED65E0B61F0CD1EA00EE1F20 /* Frameworks */,
+				ED65E0B71F0CD1EA00EE1F20 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ED65E0BB1F0CD1EA00EE1F20 /* PBXTargetDependency */,
+			);
+			name = "摩也放松馆UITests";
+			productName = "摩也放松馆UITests";
+			productReference = ED65E0B91F0CD1EA00EE1F20 /* 摩也放松馆UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ED65E0931F0CD1EA00EE1F20 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "张海昌";
+				TargetAttributes = {
+					ED65E09A1F0CD1EA00EE1F20 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = WA9VRUVC47;
+						ProvisioningStyle = Automatic;
+					};
+					ED65E0AD1F0CD1EA00EE1F20 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = WA9VRUVC47;
+						ProvisioningStyle = Automatic;
+						TestTargetID = ED65E09A1F0CD1EA00EE1F20;
+					};
+					ED65E0B81F0CD1EA00EE1F20 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = WA9VRUVC47;
+						ProvisioningStyle = Automatic;
+						TestTargetID = ED65E09A1F0CD1EA00EE1F20;
+					};
+				};
+			};
+			buildConfigurationList = ED65E0961F0CD1EA00EE1F20 /* Build configuration list for PBXProject "摩也放松馆" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ED65E0921F0CD1EA00EE1F20;
+			productRefGroup = ED65E09C1F0CD1EA00EE1F20 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ED65E09A1F0CD1EA00EE1F20 /* 摩也放松馆 */,
+				ED65E0AD1F0CD1EA00EE1F20 /* 摩也放松馆Tests */,
+				ED65E0B81F0CD1EA00EE1F20 /* 摩也放松馆UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ED65E0991F0CD1EA00EE1F20 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED65E0A51F0CD1EA00EE1F20 /* Assets.xcassets in Resources */,
+				ED65E0A81F0CD1EA00EE1F20 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED65E0AC1F0CD1EA00EE1F20 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED65E0B71F0CD1EA00EE1F20 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ED65E0971F0CD1EA00EE1F20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED65E0A31F0CD1EA00EE1F20 /* AppDelegate.m in Sources */,
+				ED65E0A01F0CD1EA00EE1F20 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED65E0AA1F0CD1EA00EE1F20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED65E0B31F0CD1EA00EE1F20 /* _____Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED65E0B51F0CD1EA00EE1F20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED65E0BE1F0CD1EA00EE1F20 /* _____UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ED65E0B01F0CD1EA00EE1F20 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ED65E09A1F0CD1EA00EE1F20 /* 摩也放松馆 */;
+			targetProxy = ED65E0AF1F0CD1EA00EE1F20 /* PBXContainerItemProxy */;
+		};
+		ED65E0BB1F0CD1EA00EE1F20 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ED65E09A1F0CD1EA00EE1F20 /* 摩也放松馆 */;
+			targetProxy = ED65E0BA1F0CD1EA00EE1F20 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ED65E0A61F0CD1EA00EE1F20 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ED65E0A71F0CD1EA00EE1F20 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ED65E0C01F0CD1EA00EE1F20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		ED65E0C11F0CD1EA00EE1F20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ED65E0C31F0CD1EA00EE1F20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = WA9VRUVC47;
+				INFOPLIST_FILE = "摩也放松馆/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.haiChang.InternationalEdition.-----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		ED65E0C41F0CD1EA00EE1F20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = WA9VRUVC47;
+				INFOPLIST_FILE = "摩也放松馆/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.haiChang.InternationalEdition.-----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		ED65E0C61F0CD1EA00EE1F20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = WA9VRUVC47;
+				INFOPLIST_FILE = "摩也放松馆Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.haiChang.InternationalEdition.-----Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/摩也放松馆.app/摩也放松馆";
+			};
+			name = Debug;
+		};
+		ED65E0C71F0CD1EA00EE1F20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = WA9VRUVC47;
+				INFOPLIST_FILE = "摩也放松馆Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.haiChang.InternationalEdition.-----Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/摩也放松馆.app/摩也放松馆";
+			};
+			name = Release;
+		};
+		ED65E0C91F0CD1EA00EE1F20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = WA9VRUVC47;
+				INFOPLIST_FILE = "摩也放松馆UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.haiChang.InternationalEdition.-----UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "摩也放松馆";
+			};
+			name = Debug;
+		};
+		ED65E0CA1F0CD1EA00EE1F20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = WA9VRUVC47;
+				INFOPLIST_FILE = "摩也放松馆UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.haiChang.InternationalEdition.-----UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "摩也放松馆";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ED65E0961F0CD1EA00EE1F20 /* Build configuration list for PBXProject "摩也放松馆" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED65E0C01F0CD1EA00EE1F20 /* Debug */,
+				ED65E0C11F0CD1EA00EE1F20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED65E0C21F0CD1EA00EE1F20 /* Build configuration list for PBXNativeTarget "摩也放松馆" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED65E0C31F0CD1EA00EE1F20 /* Debug */,
+				ED65E0C41F0CD1EA00EE1F20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		ED65E0C51F0CD1EA00EE1F20 /* Build configuration list for PBXNativeTarget "摩也放松馆Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED65E0C61F0CD1EA00EE1F20 /* Debug */,
+				ED65E0C71F0CD1EA00EE1F20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		ED65E0C81F0CD1EA00EE1F20 /* Build configuration list for PBXNativeTarget "摩也放松馆UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED65E0C91F0CD1EA00EE1F20 /* Debug */,
+				ED65E0CA1F0CD1EA00EE1F20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ED65E0931F0CD1EA00EE1F20 /* Project object */;
+}
