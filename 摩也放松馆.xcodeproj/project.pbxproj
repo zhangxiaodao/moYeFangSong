@@ -7,12 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED28A4381F0CDB4C0033940C /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = ED28A4131F0CDB4C0033940C /* NSArray+Log.m */; };
+		ED28A4391F0CDB4C0033940C /* NSAttributedString+CZAdditon.m in Sources */ = {isa = PBXBuildFile; fileRef = ED28A4151F0CDB4C0033940C /* NSAttributedString+CZAdditon.m */; };
+		ED28A43A1F0CDB4C0033940C /* NSObject+CZRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = ED28A4171F0CDB4C0033940C /* NSObject+CZRuntime.m */; };
+		ED28A43B1F0CDB4C0033940C /* NSString+CZBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = ED28A4191F0CDB4C0033940C /* NSString+CZBase64.m */; };
+		ED28A43C1F0CDB4C0033940C /* NSString+CZHash.m in Sources */ = {isa = PBXBuildFile; fileRef = ED28A41B1F0CDB4C0033940C /* NSString+CZHash.m */; };
+		ED28A43D1F0CDB4C0033940C /* NSString+CZPath.m in Sources */ = {isa = PBXBuildFile; fileRef = ED28A41D1F0CDB4C0033940C /* NSString+CZPath.m */; };
+		ED28A43E1F0CDB4C0033940C /* UIButton+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = ED28A41F1F0CDB4C0033940C /* UIButton+CZAddition.m */; };
+		ED28A43F1F0CDB4C0033940C /* UIColor+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = ED28A4211F0CDB4C0033940C /* UIColor+CZAddition.m */; };
+		ED28A4401F0CDB4C0033940C /* UILabel+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = ED28A4231F0CDB4C0033940C /* UILabel+CZAddition.m */; };
+		ED28A4411F0CDB4C0033940C /* UIScreen+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = ED28A4251F0CDB4C0033940C /* UIScreen+CZAddition.m */; };
+		ED28A4421F0CDB4C0033940C /* UIView+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = ED28A4271F0CDB4C0033940C /* UIView+CZAddition.m */; };
+		ED28A4431F0CDB4C0033940C /* UIViewController+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = ED28A4291F0CDB4C0033940C /* UIViewController+CZAddition.m */; };
+		ED28A4451F0CDB4C0033940C /* LaunchView.m in Sources */ = {isa = PBXBuildFile; fileRef = ED28A4301F0CDB4C0033940C /* LaunchView.m */; };
+		ED28A4461F0CDB4C0033940C /* LaunchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED28A4311F0CDB4C0033940C /* LaunchView.xib */; };
+		ED28A4471F0CDB4C0033940C /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED28A4331F0CDB4C0033940C /* MainViewController.m */; };
 		ED65E0A01F0CD1EA00EE1F20 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ED65E09F1F0CD1EA00EE1F20 /* main.m */; };
 		ED65E0A31F0CD1EA00EE1F20 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ED65E0A21F0CD1EA00EE1F20 /* AppDelegate.m */; };
 		ED65E0A51F0CD1EA00EE1F20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED65E0A41F0CD1EA00EE1F20 /* Assets.xcassets */; };
-		ED65E0A81F0CD1EA00EE1F20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED65E0A61F0CD1EA00EE1F20 /* LaunchScreen.storyboard */; };
 		ED65E0B31F0CD1EA00EE1F20 /* _____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = ED65E0B21F0CD1EA00EE1F20 /* _____Tests.m */; };
 		ED65E0BE1F0CD1EA00EE1F20 /* _____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = ED65E0BD1F0CD1EA00EE1F20 /* _____UITests.m */; };
+		ED65E0CC1F0CD39300EE1F20 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED65E0CB1F0CD39300EE1F20 /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,12 +48,42 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		ED28A3E41F0CD9240033940C /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		ED28A4111F0CDB4C0033940C /* CZAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZAdditions.h; sourceTree = "<group>"; };
+		ED28A4121F0CDB4C0033940C /* NSArray+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Log.h"; sourceTree = "<group>"; };
+		ED28A4131F0CDB4C0033940C /* NSArray+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Log.m"; sourceTree = "<group>"; };
+		ED28A4141F0CDB4C0033940C /* NSAttributedString+CZAdditon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+CZAdditon.h"; sourceTree = "<group>"; };
+		ED28A4151F0CDB4C0033940C /* NSAttributedString+CZAdditon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+CZAdditon.m"; sourceTree = "<group>"; };
+		ED28A4161F0CDB4C0033940C /* NSObject+CZRuntime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+CZRuntime.h"; sourceTree = "<group>"; };
+		ED28A4171F0CDB4C0033940C /* NSObject+CZRuntime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+CZRuntime.m"; sourceTree = "<group>"; };
+		ED28A4181F0CDB4C0033940C /* NSString+CZBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CZBase64.h"; sourceTree = "<group>"; };
+		ED28A4191F0CDB4C0033940C /* NSString+CZBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CZBase64.m"; sourceTree = "<group>"; };
+		ED28A41A1F0CDB4C0033940C /* NSString+CZHash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CZHash.h"; sourceTree = "<group>"; };
+		ED28A41B1F0CDB4C0033940C /* NSString+CZHash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CZHash.m"; sourceTree = "<group>"; };
+		ED28A41C1F0CDB4C0033940C /* NSString+CZPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CZPath.h"; sourceTree = "<group>"; };
+		ED28A41D1F0CDB4C0033940C /* NSString+CZPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CZPath.m"; sourceTree = "<group>"; };
+		ED28A41E1F0CDB4C0033940C /* UIButton+CZAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+CZAddition.h"; sourceTree = "<group>"; };
+		ED28A41F1F0CDB4C0033940C /* UIButton+CZAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+CZAddition.m"; sourceTree = "<group>"; };
+		ED28A4201F0CDB4C0033940C /* UIColor+CZAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+CZAddition.h"; sourceTree = "<group>"; };
+		ED28A4211F0CDB4C0033940C /* UIColor+CZAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+CZAddition.m"; sourceTree = "<group>"; };
+		ED28A4221F0CDB4C0033940C /* UILabel+CZAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+CZAddition.h"; sourceTree = "<group>"; };
+		ED28A4231F0CDB4C0033940C /* UILabel+CZAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+CZAddition.m"; sourceTree = "<group>"; };
+		ED28A4241F0CDB4C0033940C /* UIScreen+CZAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScreen+CZAddition.h"; sourceTree = "<group>"; };
+		ED28A4251F0CDB4C0033940C /* UIScreen+CZAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScreen+CZAddition.m"; sourceTree = "<group>"; };
+		ED28A4261F0CDB4C0033940C /* UIView+CZAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CZAddition.h"; sourceTree = "<group>"; };
+		ED28A4271F0CDB4C0033940C /* UIView+CZAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CZAddition.m"; sourceTree = "<group>"; };
+		ED28A4281F0CDB4C0033940C /* UIViewController+CZAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+CZAddition.h"; sourceTree = "<group>"; };
+		ED28A4291F0CDB4C0033940C /* UIViewController+CZAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+CZAddition.m"; sourceTree = "<group>"; };
+		ED28A42F1F0CDB4C0033940C /* LaunchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaunchView.h; sourceTree = "<group>"; };
+		ED28A4301F0CDB4C0033940C /* LaunchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchView.m; sourceTree = "<group>"; };
+		ED28A4311F0CDB4C0033940C /* LaunchView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchView.xib; sourceTree = "<group>"; };
+		ED28A4321F0CDB4C0033940C /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		ED28A4331F0CDB4C0033940C /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		ED65E09B1F0CD1EA00EE1F20 /* 摩也放松馆.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "摩也放松馆.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED65E09F1F0CD1EA00EE1F20 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		ED65E0A11F0CD1EA00EE1F20 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		ED65E0A21F0CD1EA00EE1F20 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		ED65E0A41F0CD1EA00EE1F20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		ED65E0A71F0CD1EA00EE1F20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED65E0A91F0CD1EA00EE1F20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED65E0AE1F0CD1EA00EE1F20 /* 摩也放松馆Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "摩也放松馆Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED65E0B21F0CD1EA00EE1F20 /* _____Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_____Tests.m"; sourceTree = "<group>"; };
@@ -46,6 +91,7 @@
 		ED65E0B91F0CD1EA00EE1F20 /* 摩也放松馆UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "摩也放松馆UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED65E0BD1F0CD1EA00EE1F20 /* _____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_____UITests.m"; sourceTree = "<group>"; };
 		ED65E0BF1F0CD1EA00EE1F20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED65E0CB1F0CD39300EE1F20 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +119,131 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ED28A40D1F0CDB4C0033940C /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				ED28A42B1F0CDB4C0033940C /* View(视图和控制器) */,
+				ED28A40F1F0CDB4C0033940C /* Tools(工具) */,
+				ED28A40E1F0CDB4C0033940C /* Model(模型) */,
+				ED28A4371F0CDB4C0033940C /* ViewModel(视图模型) */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		ED28A40E1F0CDB4C0033940C /* Model(模型) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Model(模型)";
+			sourceTree = "<group>";
+		};
+		ED28A40F1F0CDB4C0033940C /* Tools(工具) */ = {
+			isa = PBXGroup;
+			children = (
+				ED28A4101F0CDB4C0033940C /* Additions */,
+			);
+			path = "Tools(工具)";
+			sourceTree = "<group>";
+		};
+		ED28A4101F0CDB4C0033940C /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				ED28A4111F0CDB4C0033940C /* CZAdditions.h */,
+				ED28A4121F0CDB4C0033940C /* NSArray+Log.h */,
+				ED28A4131F0CDB4C0033940C /* NSArray+Log.m */,
+				ED28A4141F0CDB4C0033940C /* NSAttributedString+CZAdditon.h */,
+				ED28A4151F0CDB4C0033940C /* NSAttributedString+CZAdditon.m */,
+				ED28A4161F0CDB4C0033940C /* NSObject+CZRuntime.h */,
+				ED28A4171F0CDB4C0033940C /* NSObject+CZRuntime.m */,
+				ED28A4181F0CDB4C0033940C /* NSString+CZBase64.h */,
+				ED28A4191F0CDB4C0033940C /* NSString+CZBase64.m */,
+				ED28A41A1F0CDB4C0033940C /* NSString+CZHash.h */,
+				ED28A41B1F0CDB4C0033940C /* NSString+CZHash.m */,
+				ED28A41C1F0CDB4C0033940C /* NSString+CZPath.h */,
+				ED28A41D1F0CDB4C0033940C /* NSString+CZPath.m */,
+				ED28A41E1F0CDB4C0033940C /* UIButton+CZAddition.h */,
+				ED28A41F1F0CDB4C0033940C /* UIButton+CZAddition.m */,
+				ED28A4201F0CDB4C0033940C /* UIColor+CZAddition.h */,
+				ED28A4211F0CDB4C0033940C /* UIColor+CZAddition.m */,
+				ED28A4221F0CDB4C0033940C /* UILabel+CZAddition.h */,
+				ED28A4231F0CDB4C0033940C /* UILabel+CZAddition.m */,
+				ED28A4241F0CDB4C0033940C /* UIScreen+CZAddition.h */,
+				ED28A4251F0CDB4C0033940C /* UIScreen+CZAddition.m */,
+				ED28A4261F0CDB4C0033940C /* UIView+CZAddition.h */,
+				ED28A4271F0CDB4C0033940C /* UIView+CZAddition.m */,
+				ED28A4281F0CDB4C0033940C /* UIViewController+CZAddition.h */,
+				ED28A4291F0CDB4C0033940C /* UIViewController+CZAddition.m */,
+			);
+			path = Additions;
+			sourceTree = "<group>";
+		};
+		ED28A42B1F0CDB4C0033940C /* View(视图和控制器) */ = {
+			isa = PBXGroup;
+			children = (
+				ED28A42D1F0CDB4C0033940C /* Main */,
+				ED28A4361F0CDB4C0033940C /* Operation */,
+				ED28A42C1F0CDB4C0033940C /* AddService */,
+				ED28A4351F0CDB4C0033940C /* MineInfo */,
+			);
+			path = "View(视图和控制器)";
+			sourceTree = "<group>";
+		};
+		ED28A42C1F0CDB4C0033940C /* AddService */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AddService;
+			sourceTree = "<group>";
+		};
+		ED28A42D1F0CDB4C0033940C /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				ED28A4321F0CDB4C0033940C /* MainViewController.h */,
+				ED28A4331F0CDB4C0033940C /* MainViewController.m */,
+				ED28A42E1F0CDB4C0033940C /* Launch */,
+				ED28A4341F0CDB4C0033940C /* SetUserInfo */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		ED28A42E1F0CDB4C0033940C /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				ED28A42F1F0CDB4C0033940C /* LaunchView.h */,
+				ED28A4301F0CDB4C0033940C /* LaunchView.m */,
+				ED28A4311F0CDB4C0033940C /* LaunchView.xib */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		ED28A4341F0CDB4C0033940C /* SetUserInfo */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SetUserInfo;
+			sourceTree = "<group>";
+		};
+		ED28A4351F0CDB4C0033940C /* MineInfo */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MineInfo;
+			sourceTree = "<group>";
+		};
+		ED28A4361F0CDB4C0033940C /* Operation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Operation;
+			sourceTree = "<group>";
+		};
+		ED28A4371F0CDB4C0033940C /* ViewModel(视图模型) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "ViewModel(视图模型)";
+			sourceTree = "<group>";
+		};
 		ED65E0921F0CD1EA00EE1F20 = {
 			isa = PBXGroup;
 			children = (
@@ -96,11 +267,10 @@
 		ED65E09D1F0CD1EA00EE1F20 /* 摩也放松馆 */ = {
 			isa = PBXGroup;
 			children = (
+				ED28A40D1F0CDB4C0033940C /* Classes */,
 				ED65E0A11F0CD1EA00EE1F20 /* AppDelegate.h */,
 				ED65E0A21F0CD1EA00EE1F20 /* AppDelegate.m */,
-				ED65E0A41F0CD1EA00EE1F20 /* Assets.xcassets */,
-				ED65E0A61F0CD1EA00EE1F20 /* LaunchScreen.storyboard */,
-				ED65E0A91F0CD1EA00EE1F20 /* Info.plist */,
+				ED28A3E41F0CD9240033940C /* PrefixHeader.pch */,
 				ED65E09E1F0CD1EA00EE1F20 /* Supporting Files */,
 			);
 			path = "摩也放松馆";
@@ -109,6 +279,9 @@
 		ED65E09E1F0CD1EA00EE1F20 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				ED65E0CB1F0CD39300EE1F20 /* Launch Screen.storyboard */,
+				ED65E0A41F0CD1EA00EE1F20 /* Assets.xcassets */,
+				ED65E0A91F0CD1EA00EE1F20 /* Info.plist */,
 				ED65E09F1F0CD1EA00EE1F20 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -241,8 +414,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED28A4461F0CDB4C0033940C /* LaunchView.xib in Resources */,
+				ED65E0CC1F0CD39300EE1F20 /* Launch Screen.storyboard in Resources */,
 				ED65E0A51F0CD1EA00EE1F20 /* Assets.xcassets in Resources */,
-				ED65E0A81F0CD1EA00EE1F20 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,7 +441,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED28A43F1F0CDB4C0033940C /* UIColor+CZAddition.m in Sources */,
+				ED28A4391F0CDB4C0033940C /* NSAttributedString+CZAdditon.m in Sources */,
+				ED28A43D1F0CDB4C0033940C /* NSString+CZPath.m in Sources */,
+				ED28A4381F0CDB4C0033940C /* NSArray+Log.m in Sources */,
 				ED65E0A31F0CD1EA00EE1F20 /* AppDelegate.m in Sources */,
+				ED28A43E1F0CDB4C0033940C /* UIButton+CZAddition.m in Sources */,
+				ED28A4421F0CDB4C0033940C /* UIView+CZAddition.m in Sources */,
+				ED28A4471F0CDB4C0033940C /* MainViewController.m in Sources */,
+				ED28A43C1F0CDB4C0033940C /* NSString+CZHash.m in Sources */,
+				ED28A4401F0CDB4C0033940C /* UILabel+CZAddition.m in Sources */,
+				ED28A43B1F0CDB4C0033940C /* NSString+CZBase64.m in Sources */,
+				ED28A43A1F0CDB4C0033940C /* NSObject+CZRuntime.m in Sources */,
+				ED28A4431F0CDB4C0033940C /* UIViewController+CZAddition.m in Sources */,
+				ED28A4411F0CDB4C0033940C /* UIScreen+CZAddition.m in Sources */,
+				ED28A4451F0CDB4C0033940C /* LaunchView.m in Sources */,
 				ED65E0A01F0CD1EA00EE1F20 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,17 +490,6 @@
 			targetProxy = ED65E0BA1F0CD1EA00EE1F20 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		ED65E0A61F0CD1EA00EE1F20 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				ED65E0A71F0CD1EA00EE1F20 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		ED65E0C01F0CD1EA00EE1F20 /* Debug */ = {
@@ -410,10 +587,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = WA9VRUVC47;
+				GCC_PREFIX_HEADER = "/Users/hangzhouaerfate/Desktop/摩也放松馆/摩也放松馆/PrefixHeader.pch";
 				INFOPLIST_FILE = "摩也放松馆/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.haiChang.InternationalEdition.-----";
+				PRODUCT_BUNDLE_IDENTIFIER = com.haiChang.moyefangsongguan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -422,10 +602,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = WA9VRUVC47;
+				GCC_PREFIX_HEADER = "/Users/hangzhouaerfate/Desktop/摩也放松馆/摩也放松馆/PrefixHeader.pch";
 				INFOPLIST_FILE = "摩也放松馆/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.haiChang.InternationalEdition.-----";
+				PRODUCT_BUNDLE_IDENTIFIER = com.haiChang.moyefangsongguan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -498,6 +681,7 @@
 				ED65E0C41F0CD1EA00EE1F20 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ED65E0C51F0CD1EA00EE1F20 /* Build configuration list for PBXNativeTarget "摩也放松馆Tests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +690,7 @@
 				ED65E0C71F0CD1EA00EE1F20 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ED65E0C81F0CD1EA00EE1F20 /* Build configuration list for PBXNativeTarget "摩也放松馆UITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +699,7 @@
 				ED65E0CA1F0CD1EA00EE1F20 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
