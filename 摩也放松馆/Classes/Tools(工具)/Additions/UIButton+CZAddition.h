@@ -25,6 +25,17 @@
 /**
  创建文本按钮
 
+ @param title 标题文字
+ @param fontSize 字体大小
+ @param normalColor 背景默认颜色
+ @param highlightedColor 背景高亮颜色
+ @return UIButton
+ */
++ (instancetype)cz_textButton:(NSString *)title fontSize:(CGFloat)fontSize backGroundNormalColor:(UIColor *)normalColor backGroundHighlightedColor:(UIColor *)highlightedColor;
+
+/**
+ 创建文本按钮
+
  @param title               标题文字
  @param fontSize            字体大小
  @param normalColor         默认颜色

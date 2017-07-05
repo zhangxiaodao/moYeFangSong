@@ -13,6 +13,35 @@
     return [self cz_textButton:title fontSize:fontSize normalColor:normalColor highlightedColor:highlightedColor backgroundImageName:nil];
 }
 
++ (instancetype)cz_textButton:(NSString *)title fontSize:(CGFloat)fontSize backGroundNormalColor:(UIColor *)normalColor backGroundHighlightedColor:(UIColor *)highlightedColor {
+    UIButton *button = [[self alloc] init];
+    
+    [button setTitle:title forState:UIControlStateNormal];
+    
+    [button setBackgroundImage:[UIImage imageWithColor:normalColor] forState:UIControlStateNormal];
+    [button setBackgroundImage:[UIImage imageWithColor:highlightedColor] forState:UIControlStateHighlighted];
+    
+    button.titleLabel.font = [UIFont systemFontOfSize:fontSize];
+    
+    button.layer.masksToBounds = YES;
+    button.layer.cornerRadius = kBtnCorHeight;
+    button.layer.borderWidth = 2;
+    button.layer.borderColor = highlightedColor.CGColor;
+    
+    CALayer *layer = [CALayer layer];
+    layer.frame = button.bounds;
+    layer.backgroundColor = highlightedColor.CGColor;
+    layer.shadowOffset = CGSizeMake(10, 10);
+    layer.shadowOpacity = 0.5;
+    layer.shadowRadius = 5;// 阴影扩散的范围控制
+    
+    [button.layer addSublayer:layer];
+    
+    [button sizeToFit];
+    
+    return button;
+}
+
 + (instancetype)cz_textButton:(NSString *)title fontSize:(CGFloat)fontSize normalColor:(UIColor *)normalColor highlightedColor:(UIColor *)highlightedColor backgroundImageName:(NSString *)backgroundImageName {
     
     UIButton *button = [[self alloc] init];

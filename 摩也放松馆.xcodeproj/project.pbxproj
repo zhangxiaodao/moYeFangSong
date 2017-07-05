@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4283D444996856CD6A450BF0 /* libPods-摩也放松馆.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F8431E2ABB092BFFEF6F91B4 /* libPods-摩也放松馆.a */; };
 		ED28A4381F0CDB4C0033940C /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = ED28A4131F0CDB4C0033940C /* NSArray+Log.m */; };
 		ED28A4391F0CDB4C0033940C /* NSAttributedString+CZAdditon.m in Sources */ = {isa = PBXBuildFile; fileRef = ED28A4151F0CDB4C0033940C /* NSAttributedString+CZAdditon.m */; };
 		ED28A43A1F0CDB4C0033940C /* NSObject+CZRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = ED28A4171F0CDB4C0033940C /* NSObject+CZRuntime.m */; };
@@ -22,6 +23,8 @@
 		ED28A4451F0CDB4C0033940C /* LaunchView.m in Sources */ = {isa = PBXBuildFile; fileRef = ED28A4301F0CDB4C0033940C /* LaunchView.m */; };
 		ED28A4461F0CDB4C0033940C /* LaunchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED28A4311F0CDB4C0033940C /* LaunchView.xib */; };
 		ED28A4471F0CDB4C0033940C /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED28A4331F0CDB4C0033940C /* MainViewController.m */; };
+		ED28A44B1F0CDFC40033940C /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = ED28A44A1F0CDFC40033940C /* UIView+Extension.m */; };
+		ED28A44E1F0CEDD20033940C /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = ED28A44D1F0CEDD20033940C /* UIImage+Extension.m */; };
 		ED65E0A01F0CD1EA00EE1F20 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ED65E09F1F0CD1EA00EE1F20 /* main.m */; };
 		ED65E0A31F0CD1EA00EE1F20 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ED65E0A21F0CD1EA00EE1F20 /* AppDelegate.m */; };
 		ED65E0A51F0CD1EA00EE1F20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED65E0A41F0CD1EA00EE1F20 /* Assets.xcassets */; };
@@ -48,6 +51,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1376FDB835EDF64707C6E972 /* Pods-摩也放松馆.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-摩也放松馆.debug.xcconfig"; path = "Pods/Target Support Files/Pods-摩也放松馆/Pods-摩也放松馆.debug.xcconfig"; sourceTree = "<group>"; };
+		3D12B5C3E6B794669DD453FB /* Pods-摩也放松馆.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-摩也放松馆.release.xcconfig"; path = "Pods/Target Support Files/Pods-摩也放松馆/Pods-摩也放松馆.release.xcconfig"; sourceTree = "<group>"; };
 		ED28A3E41F0CD9240033940C /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		ED28A4111F0CDB4C0033940C /* CZAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZAdditions.h; sourceTree = "<group>"; };
 		ED28A4121F0CDB4C0033940C /* NSArray+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Log.h"; sourceTree = "<group>"; };
@@ -79,6 +84,10 @@
 		ED28A4311F0CDB4C0033940C /* LaunchView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchView.xib; sourceTree = "<group>"; };
 		ED28A4321F0CDB4C0033940C /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		ED28A4331F0CDB4C0033940C /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		ED28A4491F0CDFC40033940C /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		ED28A44A1F0CDFC40033940C /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		ED28A44C1F0CEDD20033940C /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
+		ED28A44D1F0CEDD20033940C /* UIImage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
 		ED65E09B1F0CD1EA00EE1F20 /* 摩也放松馆.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "摩也放松馆.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED65E09F1F0CD1EA00EE1F20 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		ED65E0A11F0CD1EA00EE1F20 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -92,6 +101,7 @@
 		ED65E0BD1F0CD1EA00EE1F20 /* _____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_____UITests.m"; sourceTree = "<group>"; };
 		ED65E0BF1F0CD1EA00EE1F20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED65E0CB1F0CD39300EE1F20 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		F8431E2ABB092BFFEF6F91B4 /* libPods-摩也放松馆.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-摩也放松馆.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +109,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4283D444996856CD6A450BF0 /* libPods-摩也放松馆.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +130,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		64CFEB4B075CF20128EA76F0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F8431E2ABB092BFFEF6F91B4 /* libPods-摩也放松馆.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6B9CA9FC82E13873DD100BB0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1376FDB835EDF64707C6E972 /* Pods-摩也放松馆.debug.xcconfig */,
+				3D12B5C3E6B794669DD453FB /* Pods-摩也放松馆.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		ED28A40D1F0CDB4C0033940C /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -148,6 +176,8 @@
 		ED28A4101F0CDB4C0033940C /* Additions */ = {
 			isa = PBXGroup;
 			children = (
+				ED28A4491F0CDFC40033940C /* UIView+Extension.h */,
+				ED28A44A1F0CDFC40033940C /* UIView+Extension.m */,
 				ED28A4111F0CDB4C0033940C /* CZAdditions.h */,
 				ED28A4121F0CDB4C0033940C /* NSArray+Log.h */,
 				ED28A4131F0CDB4C0033940C /* NSArray+Log.m */,
@@ -173,6 +203,8 @@
 				ED28A4271F0CDB4C0033940C /* UIView+CZAddition.m */,
 				ED28A4281F0CDB4C0033940C /* UIViewController+CZAddition.h */,
 				ED28A4291F0CDB4C0033940C /* UIViewController+CZAddition.m */,
+				ED28A44C1F0CEDD20033940C /* UIImage+Extension.h */,
+				ED28A44D1F0CEDD20033940C /* UIImage+Extension.m */,
 			);
 			path = Additions;
 			sourceTree = "<group>";
@@ -251,6 +283,8 @@
 				ED65E0B11F0CD1EA00EE1F20 /* 摩也放松馆Tests */,
 				ED65E0BC1F0CD1EA00EE1F20 /* 摩也放松馆UITests */,
 				ED65E09C1F0CD1EA00EE1F20 /* Products */,
+				6B9CA9FC82E13873DD100BB0 /* Pods */,
+				64CFEB4B075CF20128EA76F0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -312,9 +346,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ED65E0C21F0CD1EA00EE1F20 /* Build configuration list for PBXNativeTarget "摩也放松馆" */;
 			buildPhases = (
+				6EB1F36E2D44CFD6074751AC /* [CP] Check Pods Manifest.lock */,
 				ED65E0971F0CD1EA00EE1F20 /* Sources */,
 				ED65E0981F0CD1EA00EE1F20 /* Frameworks */,
 				ED65E0991F0CD1EA00EE1F20 /* Resources */,
+				EDAA35C7E5527BAB38E24661 /* [CP] Embed Pods Frameworks */,
+				1A484334E22B0A32B128FDD9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -436,6 +473,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1A484334E22B0A32B128FDD9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-摩也放松馆/Pods-摩也放松馆-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6EB1F36E2D44CFD6074751AC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EDAA35C7E5527BAB38E24661 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-摩也放松馆/Pods-摩也放松馆-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		ED65E0971F0CD1EA00EE1F20 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -446,6 +531,7 @@
 				ED28A43D1F0CDB4C0033940C /* NSString+CZPath.m in Sources */,
 				ED28A4381F0CDB4C0033940C /* NSArray+Log.m in Sources */,
 				ED65E0A31F0CD1EA00EE1F20 /* AppDelegate.m in Sources */,
+				ED28A44B1F0CDFC40033940C /* UIView+Extension.m in Sources */,
 				ED28A43E1F0CDB4C0033940C /* UIButton+CZAddition.m in Sources */,
 				ED28A4421F0CDB4C0033940C /* UIView+CZAddition.m in Sources */,
 				ED28A4471F0CDB4C0033940C /* MainViewController.m in Sources */,
@@ -455,6 +541,7 @@
 				ED28A43A1F0CDB4C0033940C /* NSObject+CZRuntime.m in Sources */,
 				ED28A4431F0CDB4C0033940C /* UIViewController+CZAddition.m in Sources */,
 				ED28A4411F0CDB4C0033940C /* UIScreen+CZAddition.m in Sources */,
+				ED28A44E1F0CEDD20033940C /* UIImage+Extension.m in Sources */,
 				ED28A4451F0CDB4C0033940C /* LaunchView.m in Sources */,
 				ED65E0A01F0CD1EA00EE1F20 /* main.m in Sources */,
 			);
@@ -584,6 +671,7 @@
 		};
 		ED65E0C31F0CD1EA00EE1F20 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1376FDB835EDF64707C6E972 /* Pods-摩也放松馆.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = WA9VRUVC47;
@@ -599,6 +687,7 @@
 		};
 		ED65E0C41F0CD1EA00EE1F20 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D12B5C3E6B794669DD453FB /* Pods-摩也放松馆.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = WA9VRUVC47;
