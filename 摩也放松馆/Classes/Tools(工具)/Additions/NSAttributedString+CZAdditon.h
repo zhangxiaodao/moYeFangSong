@@ -26,4 +26,18 @@
                            titleColor:(UIColor *)titleColor
                               spacing:(CGFloat)spacing;
 
+/**
+ 设置 UILabel 的属性文本
+
+ @param range 设置属性文本的截取位置
+ @param attributedSize 属性文本的大小
+ @param attributedColor 属性文本的颜色
+ @param text text
+ @return 属性文本
+ */
++ (NSAttributedString *)cz_AttributedSubString:(NSRange)range
+                        attributedSize:(CGFloat)attributedSize
+                       attributedColor:(UIColor *)attributedColor
+                                 text:(NSString *)text;
+
 @end

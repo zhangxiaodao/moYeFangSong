@@ -56,4 +56,13 @@
  */
 + (instancetype)cz_imageButton:(NSString *)imageName backgroundImageName:(NSString *)backgroundImageName;
 
+/**
+ 创建图像按钮
+
+ @param normalImageName   正常图像名称
+ @param selectedImageName 点击状态图像名称
+ @return UIButton
+ */
++ (instancetype)cz_imageButton:(NSString *)normalImageName selectedImageName:(NSString *)selectedImageName;
+
 @end

@@ -25,6 +25,24 @@
 		ED28A4471F0CDB4C0033940C /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED28A4331F0CDB4C0033940C /* MainViewController.m */; };
 		ED28A44B1F0CDFC40033940C /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = ED28A44A1F0CDFC40033940C /* UIView+Extension.m */; };
 		ED28A44E1F0CEDD20033940C /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = ED28A44D1F0CEDD20033940C /* UIImage+Extension.m */; };
+		ED28A4541F0DD7E90033940C /* CZBtnView.m in Sources */ = {isa = PBXBuildFile; fileRef = ED28A4531F0DD7E90033940C /* CZBtnView.m */; };
+		ED28A4571F0DDAC80033940C /* MYNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED28A4561F0DDAC80033940C /* MYNavViewController.m */; };
+		ED28A45A1F0DDF6A0033940C /* MYSexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED28A4591F0DDF6A0033940C /* MYSexViewController.m */; };
+		ED28A45D1F0DDFB80033940C /* MYBirthdayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED28A45C1F0DDFB80033940C /* MYBirthdayViewController.m */; };
+		ED28A4601F0DDFD90033940C /* MYHeightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED28A45F1F0DDFD90033940C /* MYHeightViewController.m */; };
+		ED28A4631F0DDFF80033940C /* MYWeightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED28A4621F0DDFF80033940C /* MYWeightViewController.m */; };
+		ED28A4661F0DE0030033940C /* MYPhoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED28A4651F0DE0030033940C /* MYPhoneViewController.m */; };
+		ED28A4691F0E0E170033940C /* MYUserInfoBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED28A4681F0E0E170033940C /* MYUserInfoBaseViewController.m */; };
+		ED28A46D1F0F21970033940C /* MYDividingRuleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = ED28A46C1F0F21970033940C /* MYDividingRuleScrollView.m */; };
+		ED28A4701F0F2B310033940C /* MYDividingRuleView.m in Sources */ = {isa = PBXBuildFile; fileRef = ED28A46F1F0F2B310033940C /* MYDividingRuleView.m */; };
+		ED28A4731F0F73F30033940C /* UITextField+Custom.m in Sources */ = {isa = PBXBuildFile; fileRef = ED28A4721F0F73F30033940C /* UITextField+Custom.m */; };
+		ED28A4761F0F74340033940C /* MYPhoneView.m in Sources */ = {isa = PBXBuildFile; fileRef = ED28A4751F0F74340033940C /* MYPhoneView.m */; };
+		ED28A4791F0F86340033940C /* MYOperationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED28A4781F0F86340033940C /* MYOperationViewController.m */; };
+		ED28A47C1F0F863C0033940C /* MYAddServiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED28A47B1F0F863C0033940C /* MYAddServiceViewController.m */; };
+		ED28A47F1F0F86430033940C /* MYMineInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED28A47E1F0F86430033940C /* MYMineInfoViewController.m */; };
+		ED28A4821F0F8B740033940C /* MYMainBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED28A4811F0F8B740033940C /* MYMainBaseViewController.m */; };
+		ED28A4861F0F8D740033940C /* MYOperationViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED28A4851F0F8D740033940C /* MYOperationViewController.storyboard */; };
+		ED28A48A1F0F908C0033940C /* MYOperationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ED28A4891F0F908C0033940C /* MYOperationCell.m */; };
 		ED65E0A01F0CD1EA00EE1F20 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ED65E09F1F0CD1EA00EE1F20 /* main.m */; };
 		ED65E0A31F0CD1EA00EE1F20 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ED65E0A21F0CD1EA00EE1F20 /* AppDelegate.m */; };
 		ED65E0A51F0CD1EA00EE1F20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED65E0A41F0CD1EA00EE1F20 /* Assets.xcassets */; };
@@ -88,6 +106,41 @@
 		ED28A44A1F0CDFC40033940C /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		ED28A44C1F0CEDD20033940C /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
 		ED28A44D1F0CEDD20033940C /* UIImage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
+		ED28A4521F0DD7E90033940C /* CZBtnView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZBtnView.h; sourceTree = "<group>"; };
+		ED28A4531F0DD7E90033940C /* CZBtnView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZBtnView.m; sourceTree = "<group>"; };
+		ED28A4551F0DDAC80033940C /* MYNavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYNavViewController.h; sourceTree = "<group>"; };
+		ED28A4561F0DDAC80033940C /* MYNavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYNavViewController.m; sourceTree = "<group>"; };
+		ED28A4581F0DDF6A0033940C /* MYSexViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYSexViewController.h; sourceTree = "<group>"; };
+		ED28A4591F0DDF6A0033940C /* MYSexViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYSexViewController.m; sourceTree = "<group>"; };
+		ED28A45B1F0DDFB80033940C /* MYBirthdayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYBirthdayViewController.h; sourceTree = "<group>"; };
+		ED28A45C1F0DDFB80033940C /* MYBirthdayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYBirthdayViewController.m; sourceTree = "<group>"; };
+		ED28A45E1F0DDFD90033940C /* MYHeightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYHeightViewController.h; sourceTree = "<group>"; };
+		ED28A45F1F0DDFD90033940C /* MYHeightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYHeightViewController.m; sourceTree = "<group>"; };
+		ED28A4611F0DDFF80033940C /* MYWeightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYWeightViewController.h; sourceTree = "<group>"; };
+		ED28A4621F0DDFF80033940C /* MYWeightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYWeightViewController.m; sourceTree = "<group>"; };
+		ED28A4641F0DE0030033940C /* MYPhoneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYPhoneViewController.h; sourceTree = "<group>"; };
+		ED28A4651F0DE0030033940C /* MYPhoneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYPhoneViewController.m; sourceTree = "<group>"; };
+		ED28A4671F0E0E170033940C /* MYUserInfoBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYUserInfoBaseViewController.h; sourceTree = "<group>"; };
+		ED28A4681F0E0E170033940C /* MYUserInfoBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYUserInfoBaseViewController.m; sourceTree = "<group>"; };
+		ED28A46B1F0F21970033940C /* MYDividingRuleScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYDividingRuleScrollView.h; sourceTree = "<group>"; };
+		ED28A46C1F0F21970033940C /* MYDividingRuleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYDividingRuleScrollView.m; sourceTree = "<group>"; };
+		ED28A46E1F0F2B310033940C /* MYDividingRuleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYDividingRuleView.h; sourceTree = "<group>"; };
+		ED28A46F1F0F2B310033940C /* MYDividingRuleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYDividingRuleView.m; sourceTree = "<group>"; };
+		ED28A4711F0F73F30033940C /* UITextField+Custom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Custom.h"; sourceTree = "<group>"; };
+		ED28A4721F0F73F30033940C /* UITextField+Custom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Custom.m"; sourceTree = "<group>"; };
+		ED28A4741F0F74340033940C /* MYPhoneView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYPhoneView.h; sourceTree = "<group>"; };
+		ED28A4751F0F74340033940C /* MYPhoneView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYPhoneView.m; sourceTree = "<group>"; };
+		ED28A4771F0F86340033940C /* MYOperationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYOperationViewController.h; sourceTree = "<group>"; };
+		ED28A4781F0F86340033940C /* MYOperationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYOperationViewController.m; sourceTree = "<group>"; };
+		ED28A47A1F0F863C0033940C /* MYAddServiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYAddServiceViewController.h; sourceTree = "<group>"; };
+		ED28A47B1F0F863C0033940C /* MYAddServiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYAddServiceViewController.m; sourceTree = "<group>"; };
+		ED28A47D1F0F86430033940C /* MYMineInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYMineInfoViewController.h; sourceTree = "<group>"; };
+		ED28A47E1F0F86430033940C /* MYMineInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYMineInfoViewController.m; sourceTree = "<group>"; };
+		ED28A4801F0F8B740033940C /* MYMainBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYMainBaseViewController.h; sourceTree = "<group>"; };
+		ED28A4811F0F8B740033940C /* MYMainBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYMainBaseViewController.m; sourceTree = "<group>"; };
+		ED28A4851F0F8D740033940C /* MYOperationViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MYOperationViewController.storyboard; sourceTree = "<group>"; };
+		ED28A4881F0F908C0033940C /* MYOperationCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYOperationCell.h; sourceTree = "<group>"; };
+		ED28A4891F0F908C0033940C /* MYOperationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYOperationCell.m; sourceTree = "<group>"; };
 		ED65E09B1F0CD1EA00EE1F20 /* 摩也放松馆.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "摩也放松馆.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED65E09F1F0CD1EA00EE1F20 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		ED65E0A11F0CD1EA00EE1F20 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -168,6 +221,7 @@
 		ED28A40F1F0CDB4C0033940C /* Tools(工具) */ = {
 			isa = PBXGroup;
 			children = (
+				ED28A46A1F0F215B0033940C /* CustomTools */,
 				ED28A4101F0CDB4C0033940C /* Additions */,
 			);
 			path = "Tools(工具)";
@@ -176,6 +230,10 @@
 		ED28A4101F0CDB4C0033940C /* Additions */ = {
 			isa = PBXGroup;
 			children = (
+				ED28A4711F0F73F30033940C /* UITextField+Custom.h */,
+				ED28A4721F0F73F30033940C /* UITextField+Custom.m */,
+				ED28A4521F0DD7E90033940C /* CZBtnView.h */,
+				ED28A4531F0DD7E90033940C /* CZBtnView.m */,
 				ED28A4491F0CDFC40033940C /* UIView+Extension.h */,
 				ED28A44A1F0CDFC40033940C /* UIView+Extension.m */,
 				ED28A4111F0CDB4C0033940C /* CZAdditions.h */,
@@ -223,6 +281,8 @@
 		ED28A42C1F0CDB4C0033940C /* AddService */ = {
 			isa = PBXGroup;
 			children = (
+				ED28A47A1F0F863C0033940C /* MYAddServiceViewController.h */,
+				ED28A47B1F0F863C0033940C /* MYAddServiceViewController.m */,
 			);
 			path = AddService;
 			sourceTree = "<group>";
@@ -232,6 +292,10 @@
 			children = (
 				ED28A4321F0CDB4C0033940C /* MainViewController.h */,
 				ED28A4331F0CDB4C0033940C /* MainViewController.m */,
+				ED28A4551F0DDAC80033940C /* MYNavViewController.h */,
+				ED28A4561F0DDAC80033940C /* MYNavViewController.m */,
+				ED28A4801F0F8B740033940C /* MYMainBaseViewController.h */,
+				ED28A4811F0F8B740033940C /* MYMainBaseViewController.m */,
 				ED28A42E1F0CDB4C0033940C /* Launch */,
 				ED28A4341F0CDB4C0033940C /* SetUserInfo */,
 			);
@@ -251,6 +315,20 @@
 		ED28A4341F0CDB4C0033940C /* SetUserInfo */ = {
 			isa = PBXGroup;
 			children = (
+				ED28A4671F0E0E170033940C /* MYUserInfoBaseViewController.h */,
+				ED28A4681F0E0E170033940C /* MYUserInfoBaseViewController.m */,
+				ED28A4581F0DDF6A0033940C /* MYSexViewController.h */,
+				ED28A4591F0DDF6A0033940C /* MYSexViewController.m */,
+				ED28A45B1F0DDFB80033940C /* MYBirthdayViewController.h */,
+				ED28A45C1F0DDFB80033940C /* MYBirthdayViewController.m */,
+				ED28A45E1F0DDFD90033940C /* MYHeightViewController.h */,
+				ED28A45F1F0DDFD90033940C /* MYHeightViewController.m */,
+				ED28A4611F0DDFF80033940C /* MYWeightViewController.h */,
+				ED28A4621F0DDFF80033940C /* MYWeightViewController.m */,
+				ED28A4641F0DE0030033940C /* MYPhoneViewController.h */,
+				ED28A4651F0DE0030033940C /* MYPhoneViewController.m */,
+				ED28A4741F0F74340033940C /* MYPhoneView.h */,
+				ED28A4751F0F74340033940C /* MYPhoneView.m */,
 			);
 			path = SetUserInfo;
 			sourceTree = "<group>";
@@ -258,6 +336,8 @@
 		ED28A4351F0CDB4C0033940C /* MineInfo */ = {
 			isa = PBXGroup;
 			children = (
+				ED28A47D1F0F86430033940C /* MYMineInfoViewController.h */,
+				ED28A47E1F0F86430033940C /* MYMineInfoViewController.m */,
 			);
 			path = MineInfo;
 			sourceTree = "<group>";
@@ -265,6 +345,10 @@
 		ED28A4361F0CDB4C0033940C /* Operation */ = {
 			isa = PBXGroup;
 			children = (
+				ED28A4771F0F86340033940C /* MYOperationViewController.h */,
+				ED28A4781F0F86340033940C /* MYOperationViewController.m */,
+				ED28A4851F0F8D740033940C /* MYOperationViewController.storyboard */,
+				ED28A4871F0F906F0033940C /* View */,
 			);
 			path = Operation;
 			sourceTree = "<group>";
@@ -274,6 +358,26 @@
 			children = (
 			);
 			path = "ViewModel(视图模型)";
+			sourceTree = "<group>";
+		};
+		ED28A46A1F0F215B0033940C /* CustomTools */ = {
+			isa = PBXGroup;
+			children = (
+				ED28A46B1F0F21970033940C /* MYDividingRuleScrollView.h */,
+				ED28A46C1F0F21970033940C /* MYDividingRuleScrollView.m */,
+				ED28A46E1F0F2B310033940C /* MYDividingRuleView.h */,
+				ED28A46F1F0F2B310033940C /* MYDividingRuleView.m */,
+			);
+			name = CustomTools;
+			sourceTree = "<group>";
+		};
+		ED28A4871F0F906F0033940C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ED28A4881F0F908C0033940C /* MYOperationCell.h */,
+				ED28A4891F0F908C0033940C /* MYOperationCell.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		ED65E0921F0CD1EA00EE1F20 = {
@@ -404,6 +508,7 @@
 		ED65E0931F0CD1EA00EE1F20 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = MY;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "张海昌";
 				TargetAttributes = {
@@ -452,6 +557,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED28A4461F0CDB4C0033940C /* LaunchView.xib in Resources */,
+				ED28A4861F0F8D740033940C /* MYOperationViewController.storyboard in Resources */,
 				ED65E0CC1F0CD39300EE1F20 /* Launch Screen.storyboard in Resources */,
 				ED65E0A51F0CD1EA00EE1F20 /* Assets.xcassets in Resources */,
 			);
@@ -526,24 +632,41 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED28A48A1F0F908C0033940C /* MYOperationCell.m in Sources */,
+				ED28A4821F0F8B740033940C /* MYMainBaseViewController.m in Sources */,
 				ED28A43F1F0CDB4C0033940C /* UIColor+CZAddition.m in Sources */,
 				ED28A4391F0CDB4C0033940C /* NSAttributedString+CZAdditon.m in Sources */,
+				ED28A4701F0F2B310033940C /* MYDividingRuleView.m in Sources */,
+				ED28A4571F0DDAC80033940C /* MYNavViewController.m in Sources */,
 				ED28A43D1F0CDB4C0033940C /* NSString+CZPath.m in Sources */,
+				ED28A4661F0DE0030033940C /* MYPhoneViewController.m in Sources */,
 				ED28A4381F0CDB4C0033940C /* NSArray+Log.m in Sources */,
+				ED28A45A1F0DDF6A0033940C /* MYSexViewController.m in Sources */,
+				ED28A46D1F0F21970033940C /* MYDividingRuleScrollView.m in Sources */,
 				ED65E0A31F0CD1EA00EE1F20 /* AppDelegate.m in Sources */,
 				ED28A44B1F0CDFC40033940C /* UIView+Extension.m in Sources */,
+				ED28A4631F0DDFF80033940C /* MYWeightViewController.m in Sources */,
 				ED28A43E1F0CDB4C0033940C /* UIButton+CZAddition.m in Sources */,
 				ED28A4421F0CDB4C0033940C /* UIView+CZAddition.m in Sources */,
+				ED28A4731F0F73F30033940C /* UITextField+Custom.m in Sources */,
 				ED28A4471F0CDB4C0033940C /* MainViewController.m in Sources */,
 				ED28A43C1F0CDB4C0033940C /* NSString+CZHash.m in Sources */,
+				ED28A4761F0F74340033940C /* MYPhoneView.m in Sources */,
 				ED28A4401F0CDB4C0033940C /* UILabel+CZAddition.m in Sources */,
 				ED28A43B1F0CDB4C0033940C /* NSString+CZBase64.m in Sources */,
 				ED28A43A1F0CDB4C0033940C /* NSObject+CZRuntime.m in Sources */,
+				ED28A4541F0DD7E90033940C /* CZBtnView.m in Sources */,
+				ED28A47C1F0F863C0033940C /* MYAddServiceViewController.m in Sources */,
+				ED28A4791F0F86340033940C /* MYOperationViewController.m in Sources */,
 				ED28A4431F0CDB4C0033940C /* UIViewController+CZAddition.m in Sources */,
 				ED28A4411F0CDB4C0033940C /* UIScreen+CZAddition.m in Sources */,
+				ED28A4601F0DDFD90033940C /* MYHeightViewController.m in Sources */,
 				ED28A44E1F0CEDD20033940C /* UIImage+Extension.m in Sources */,
 				ED28A4451F0CDB4C0033940C /* LaunchView.m in Sources */,
 				ED65E0A01F0CD1EA00EE1F20 /* main.m in Sources */,
+				ED28A45D1F0DDFB80033940C /* MYBirthdayViewController.m in Sources */,
+				ED28A47F1F0F86430033940C /* MYMineInfoViewController.m in Sources */,
+				ED28A4691F0E0E170033940C /* MYUserInfoBaseViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

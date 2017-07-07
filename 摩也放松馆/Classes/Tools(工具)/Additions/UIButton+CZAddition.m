@@ -84,4 +84,20 @@
     return button;
 }
 
++ (instancetype)cz_imageButton:(NSString *)normalImageName selectedImageName:(NSString *)selectedImageName {
+    UIButton *button = [[self alloc] init];
+    
+//    [button setBackgroundColor:[UIColor clearColor]];
+    
+    [button setBackgroundImage:[UIImage imageNamed:normalImageName] forState:UIControlStateNormal];
+    
+    [button setBackgroundImage:[UIImage imageNamed:selectedImageName] forState:UIControlStateSelected];
+        
+    [button sizeToFit];
+    
+    return button;
+}
+
+
+
 @end

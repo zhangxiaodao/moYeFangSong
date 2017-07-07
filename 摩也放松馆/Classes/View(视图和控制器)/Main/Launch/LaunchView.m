@@ -7,10 +7,12 @@
 //
 
 #import "LaunchView.h"
+#import "MYNavViewController.h"
+#import "MYSexViewController.h"
 
 @interface LaunchView ()<UIScrollViewDelegate>
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
-@property (nonatomic , strong) UIButton *btn;
+@property (nonatomic , strong) CZBtnView *btn;
 @end
 
 @implementation LaunchView
@@ -42,16 +44,29 @@
     _scrollView.contentSize = CGSizeMake(count * rect.size.width, rect.size.height);
     _scrollView.delegate = self;
     
-    
-    UIButton *btn = [UIButton cz_textButton:@"开启放松1.0时代" fontSize:k20 backGroundNormalColor:kCOLOR(99, 203, 248) backGroundHighlightedColor:kCOLOR(60, 155, 235)];
-    [self addSubview:btn];
-    [btn mas_makeConstraints:^(MASConstraintMaker *make) {
+
+    CZBtnView *btnView = [[CZBtnView alloc]initCZBtnViewOf:@"开启放松1.0时代" fontSize:k20 normalColor:kMainColor highlightedColor:nil  addTarget:self action:@selector(clickAtcion)];
+    [self addSubview:btnView];
+    [btnView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.size.mas_equalTo(CGSizeMake(kScreenW / 1.75, kScreenW / 7.5));
         make.centerX.mas_equalTo(self.mas_centerX);
         make.bottom.mas_equalTo(self.mas_bottom).offset(-kScreenW / 12.5);
     }];
-    btn.hidden = YES;
-    self.btn = btn;
+    btnView.hidden = YES;
+    self.btn = btnView;
+    
+}
+
+#pragma mark - clickAtcion
+- (void)clickAtcion {
+    [self removeFromSuperview];
+
+    [kStanderDefault setObject:@"NO" forKey:@"FirstUse"];
+    
+    MYSexViewController *sexVC = [[MYSexViewController alloc]init];
+    MYNavViewController *nav = [[MYNavViewController alloc]initWithRootViewController:sexVC];
+    sexVC.navigationItem.title = @"完善个人信息(1/5)";
+    kWindowRoot = nav;
     
 }
 
@@ -62,7 +77,7 @@
     NSInteger page = scrollView.contentOffset.x / scrollView.bounds.size.width;
     
     [UIView animateWithDuration:0.2 animations:^{
-        self.btn.hidden = (page != scrollView.subviews.count - 2);
+        self.btn.hidden = (page != scrollView.subviews.count - 1);
     }];
 }
 

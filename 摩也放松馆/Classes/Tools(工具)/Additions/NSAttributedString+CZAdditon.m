@@ -36,4 +36,13 @@
     return attM.copy;
 }
 
++ (NSAttributedString *)cz_AttributedSubString:(NSRange)range attributedSize:(CGFloat)attributedSize attributedColor:(UIColor *)attributedColor text:(NSString *)text {
+    
+    NSMutableAttributedString *str = [[NSMutableAttributedString alloc]initWithString:text];
+    [str addAttribute:NSForegroundColorAttributeName value:attributedColor range:range];
+    [str addAttribute:NSFontAttributeName value:[UIFont fontWithName:kFontWithName size:attributedSize] range:range];
+    NSAttributedString *attriStr = [[NSAttributedString alloc]initWithAttributedString:str];
+    return attriStr;
+}
+
 @end

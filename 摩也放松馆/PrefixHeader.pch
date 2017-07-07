@@ -6,14 +6,16 @@
 //  Copyright © 2017年 张海昌. All rights reserved.
 //
 
-#ifndef PrefixHeader_pch
-#define PrefixHeader_pch
-
 #import "UIView+Extension.h"
 #import "Masonry.h"
 #import "UIButton+CZAddition.h"
 #import "UIImage+Extension.h"
+#import "CZAdditions.h"
+#import "CZBtnView.h"
 
+
+#define kApplicate (AppDelegate *)[UIApplication sharedApplication].delegate
+#define kWindowRoot [UIApplication sharedApplication].keyWindow.rootViewController
 
 //全屏幕的frame
 #define kScreenFrame [UIScreen mainScreen].bounds
@@ -32,6 +34,8 @@
 #define kBtnCorHeight kScreenW / 15
 
 #define kCOLOR(R, G, B) [UIColor colorWithRed:R / 255.0 green:G / 255.0 blue:B / 255.0 alpha:1.0]
+#define kMainColor [UIColor colorWithRed:99 / 255.0 green:203 / 255.0 blue:248 / 255.0 alpha:1.0]
+#define kWhiteColor [UIColor whiteColor]
 
 //字体的大小
 #define k14 kScreenW/26.7857
@@ -57,5 +61,5 @@
 #define k120 kScreenW/3.125
 #define k125 kScreenW/3
 
+#define kFontWithName @"STHeitiSC-Light"
 
-#endif /* PrefixHeader_pch */
