@@ -35,19 +35,19 @@
     if (self.childViewControllers.count > 0) {
 //        UIViewController *superVC = self.childViewControllers[self.childViewControllers.count - 1];
         
-        UIButton *backButton = [UIButton buttonWithType:UIButtonTypeCustom];
-        [backButton setImage:[UIImage imageNamed:@"navigationButtonReturn"] forState:UIControlStateNormal];
-        [backButton setTitle:@"返回" forState:UIControlStateNormal];
+        _backButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        [_backButton setImage:[UIImage imageNamed:@"navigationButtonReturn"] forState:UIControlStateNormal];
+        [_backButton setTitle:@"返回" forState:UIControlStateNormal];
         
-        [backButton setTitleColor:kCOLOR(99, 203, 248) forState:UIControlStateNormal];
-        backButton.titleLabel.font = [UIFont systemFontOfSize:k15];
-        [backButton sizeToFit];
+        [_backButton setTitleColor:kCOLOR(99, 203, 248) forState:UIControlStateNormal];
+        _backButton.titleLabel.font = [UIFont systemFontOfSize:k15];
+        [_backButton sizeToFit];
         // 这句代码放在sizeToFit后面
-        backButton.contentEdgeInsets = UIEdgeInsetsMake(0, -10, 0, 0);
-        backButton.titleEdgeInsets = UIEdgeInsetsMake(0, 5, 0, 0);
-        [backButton addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];
+        _backButton.contentEdgeInsets = UIEdgeInsetsMake(0, -10, 0, 0);
+        _backButton.titleEdgeInsets = UIEdgeInsetsMake(0, 5, 0, 0);
+        [_backButton addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];
         
-        viewController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:backButton];
+        viewController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:_backButton];
         
         // 隐藏底部的工具条
         viewController.hidesBottomBarWhenPushed = YES;

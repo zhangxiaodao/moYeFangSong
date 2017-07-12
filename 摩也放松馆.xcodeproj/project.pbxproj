@@ -49,6 +49,15 @@
 		ED65E0B31F0CD1EA00EE1F20 /* _____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = ED65E0B21F0CD1EA00EE1F20 /* _____Tests.m */; };
 		ED65E0BE1F0CD1EA00EE1F20 /* _____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = ED65E0BD1F0CD1EA00EE1F20 /* _____UITests.m */; };
 		ED65E0CC1F0CD39300EE1F20 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED65E0CB1F0CD39300EE1F20 /* Launch Screen.storyboard */; };
+		ED6921781F132BA200F13C61 /* MYMineInfoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ED6921771F132BA200F13C61 /* MYMineInfoTableViewCell.m */; };
+		ED69217B1F13646F00F13C61 /* MYSearchSerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED69217A1F13646F00F13C61 /* MYSearchSerViewController.m */; };
+		ED69217E1F136F5400F13C61 /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = ED69217D1F136F5400F13C61 /* UIBarButtonItem+Extension.m */; };
+		ED6921821F14BE7600F13C61 /* MYWorkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED6921811F14BE7600F13C61 /* MYWorkViewController.m */; };
+		ED69218A1F14CC3F00F13C61 /* MYWorkTypeBtnView.m in Sources */ = {isa = PBXBuildFile; fileRef = ED6921891F14CC3F00F13C61 /* MYWorkTypeBtnView.m */; };
+		ED69218D1F14CC6A00F13C61 /* MYCustomLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = ED69218C1F14CC6A00F13C61 /* MYCustomLayout.m */; };
+		ED6921901F15D25500F13C61 /* MYWorkCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ED69218F1F15D25500F13C61 /* MYWorkCollectionViewCell.m */; };
+		ED6921931F16045500F13C61 /* MYPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = ED6921921F16045500F13C61 /* MYPickerView.m */; };
+		ED6921961F1605AC00F13C61 /* MYGearView.m in Sources */ = {isa = PBXBuildFile; fileRef = ED6921951F1605AC00F13C61 /* MYGearView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -154,6 +163,24 @@
 		ED65E0BD1F0CD1EA00EE1F20 /* _____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_____UITests.m"; sourceTree = "<group>"; };
 		ED65E0BF1F0CD1EA00EE1F20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED65E0CB1F0CD39300EE1F20 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		ED6921761F132BA200F13C61 /* MYMineInfoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYMineInfoTableViewCell.h; sourceTree = "<group>"; };
+		ED6921771F132BA200F13C61 /* MYMineInfoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYMineInfoTableViewCell.m; sourceTree = "<group>"; };
+		ED6921791F13646F00F13C61 /* MYSearchSerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYSearchSerViewController.h; sourceTree = "<group>"; };
+		ED69217A1F13646F00F13C61 /* MYSearchSerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYSearchSerViewController.m; sourceTree = "<group>"; };
+		ED69217C1F136F5400F13C61 /* UIBarButtonItem+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Extension.h"; sourceTree = "<group>"; };
+		ED69217D1F136F5400F13C61 /* UIBarButtonItem+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extension.m"; sourceTree = "<group>"; };
+		ED6921801F14BE7600F13C61 /* MYWorkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYWorkViewController.h; sourceTree = "<group>"; };
+		ED6921811F14BE7600F13C61 /* MYWorkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYWorkViewController.m; sourceTree = "<group>"; };
+		ED6921881F14CC3F00F13C61 /* MYWorkTypeBtnView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYWorkTypeBtnView.h; sourceTree = "<group>"; };
+		ED6921891F14CC3F00F13C61 /* MYWorkTypeBtnView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYWorkTypeBtnView.m; sourceTree = "<group>"; };
+		ED69218B1F14CC6A00F13C61 /* MYCustomLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYCustomLayout.h; sourceTree = "<group>"; };
+		ED69218C1F14CC6A00F13C61 /* MYCustomLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYCustomLayout.m; sourceTree = "<group>"; };
+		ED69218E1F15D25500F13C61 /* MYWorkCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYWorkCollectionViewCell.h; sourceTree = "<group>"; };
+		ED69218F1F15D25500F13C61 /* MYWorkCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYWorkCollectionViewCell.m; sourceTree = "<group>"; };
+		ED6921911F16045500F13C61 /* MYPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYPickerView.h; sourceTree = "<group>"; };
+		ED6921921F16045500F13C61 /* MYPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYPickerView.m; sourceTree = "<group>"; };
+		ED6921941F1605AC00F13C61 /* MYGearView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYGearView.h; sourceTree = "<group>"; };
+		ED6921951F1605AC00F13C61 /* MYGearView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYGearView.m; sourceTree = "<group>"; };
 		F8431E2ABB092BFFEF6F91B4 /* libPods-摩也放松馆.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-摩也放松馆.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -230,13 +257,15 @@
 		ED28A4101F0CDB4C0033940C /* Additions */ = {
 			isa = PBXGroup;
 			children = (
+				ED28A4111F0CDB4C0033940C /* CZAdditions.h */,
 				ED28A4711F0F73F30033940C /* UITextField+Custom.h */,
 				ED28A4721F0F73F30033940C /* UITextField+Custom.m */,
+				ED69217C1F136F5400F13C61 /* UIBarButtonItem+Extension.h */,
+				ED69217D1F136F5400F13C61 /* UIBarButtonItem+Extension.m */,
 				ED28A4521F0DD7E90033940C /* CZBtnView.h */,
 				ED28A4531F0DD7E90033940C /* CZBtnView.m */,
 				ED28A4491F0CDFC40033940C /* UIView+Extension.h */,
 				ED28A44A1F0CDFC40033940C /* UIView+Extension.m */,
-				ED28A4111F0CDB4C0033940C /* CZAdditions.h */,
 				ED28A4121F0CDB4C0033940C /* NSArray+Log.h */,
 				ED28A4131F0CDB4C0033940C /* NSArray+Log.m */,
 				ED28A4141F0CDB4C0033940C /* NSAttributedString+CZAdditon.h */,
@@ -283,6 +312,8 @@
 			children = (
 				ED28A47A1F0F863C0033940C /* MYAddServiceViewController.h */,
 				ED28A47B1F0F863C0033940C /* MYAddServiceViewController.m */,
+				ED6921791F13646F00F13C61 /* MYSearchSerViewController.h */,
+				ED69217A1F13646F00F13C61 /* MYSearchSerViewController.m */,
 			);
 			path = AddService;
 			sourceTree = "<group>";
@@ -338,6 +369,7 @@
 			children = (
 				ED28A47D1F0F86430033940C /* MYMineInfoViewController.h */,
 				ED28A47E1F0F86430033940C /* MYMineInfoViewController.m */,
+				ED6921751F132B8200F13C61 /* View */,
 			);
 			path = MineInfo;
 			sourceTree = "<group>";
@@ -349,6 +381,7 @@
 				ED28A4781F0F86340033940C /* MYOperationViewController.m */,
 				ED28A4851F0F8D740033940C /* MYOperationViewController.storyboard */,
 				ED28A4871F0F906F0033940C /* View */,
+				ED69217F1F14BE5E00F13C61 /* Controllers */,
 			);
 			path = Operation;
 			sourceTree = "<group>";
@@ -441,6 +474,42 @@
 				ED65E0BF1F0CD1EA00EE1F20 /* Info.plist */,
 			);
 			path = "摩也放松馆UITests";
+			sourceTree = "<group>";
+		};
+		ED6921751F132B8200F13C61 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ED6921761F132BA200F13C61 /* MYMineInfoTableViewCell.h */,
+				ED6921771F132BA200F13C61 /* MYMineInfoTableViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ED69217F1F14BE5E00F13C61 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				ED6921801F14BE7600F13C61 /* MYWorkViewController.h */,
+				ED6921811F14BE7600F13C61 /* MYWorkViewController.m */,
+				ED6921871F14CC3F00F13C61 /* View */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		ED6921871F14CC3F00F13C61 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ED6921881F14CC3F00F13C61 /* MYWorkTypeBtnView.h */,
+				ED6921891F14CC3F00F13C61 /* MYWorkTypeBtnView.m */,
+				ED69218B1F14CC6A00F13C61 /* MYCustomLayout.h */,
+				ED69218C1F14CC6A00F13C61 /* MYCustomLayout.m */,
+				ED69218E1F15D25500F13C61 /* MYWorkCollectionViewCell.h */,
+				ED69218F1F15D25500F13C61 /* MYWorkCollectionViewCell.m */,
+				ED6921941F1605AC00F13C61 /* MYGearView.h */,
+				ED6921951F1605AC00F13C61 /* MYGearView.m */,
+				ED6921911F16045500F13C61 /* MYPickerView.h */,
+				ED6921921F16045500F13C61 /* MYPickerView.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -632,16 +701,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED69218A1F14CC3F00F13C61 /* MYWorkTypeBtnView.m in Sources */,
 				ED28A48A1F0F908C0033940C /* MYOperationCell.m in Sources */,
+				ED6921931F16045500F13C61 /* MYPickerView.m in Sources */,
 				ED28A4821F0F8B740033940C /* MYMainBaseViewController.m in Sources */,
 				ED28A43F1F0CDB4C0033940C /* UIColor+CZAddition.m in Sources */,
 				ED28A4391F0CDB4C0033940C /* NSAttributedString+CZAdditon.m in Sources */,
 				ED28A4701F0F2B310033940C /* MYDividingRuleView.m in Sources */,
 				ED28A4571F0DDAC80033940C /* MYNavViewController.m in Sources */,
+				ED6921781F132BA200F13C61 /* MYMineInfoTableViewCell.m in Sources */,
 				ED28A43D1F0CDB4C0033940C /* NSString+CZPath.m in Sources */,
 				ED28A4661F0DE0030033940C /* MYPhoneViewController.m in Sources */,
 				ED28A4381F0CDB4C0033940C /* NSArray+Log.m in Sources */,
+				ED6921901F15D25500F13C61 /* MYWorkCollectionViewCell.m in Sources */,
 				ED28A45A1F0DDF6A0033940C /* MYSexViewController.m in Sources */,
+				ED69217B1F13646F00F13C61 /* MYSearchSerViewController.m in Sources */,
 				ED28A46D1F0F21970033940C /* MYDividingRuleScrollView.m in Sources */,
 				ED65E0A31F0CD1EA00EE1F20 /* AppDelegate.m in Sources */,
 				ED28A44B1F0CDFC40033940C /* UIView+Extension.m in Sources */,
@@ -654,15 +728,19 @@
 				ED28A4761F0F74340033940C /* MYPhoneView.m in Sources */,
 				ED28A4401F0CDB4C0033940C /* UILabel+CZAddition.m in Sources */,
 				ED28A43B1F0CDB4C0033940C /* NSString+CZBase64.m in Sources */,
+				ED6921961F1605AC00F13C61 /* MYGearView.m in Sources */,
 				ED28A43A1F0CDB4C0033940C /* NSObject+CZRuntime.m in Sources */,
 				ED28A4541F0DD7E90033940C /* CZBtnView.m in Sources */,
 				ED28A47C1F0F863C0033940C /* MYAddServiceViewController.m in Sources */,
 				ED28A4791F0F86340033940C /* MYOperationViewController.m in Sources */,
 				ED28A4431F0CDB4C0033940C /* UIViewController+CZAddition.m in Sources */,
 				ED28A4411F0CDB4C0033940C /* UIScreen+CZAddition.m in Sources */,
+				ED69217E1F136F5400F13C61 /* UIBarButtonItem+Extension.m in Sources */,
 				ED28A4601F0DDFD90033940C /* MYHeightViewController.m in Sources */,
+				ED69218D1F14CC6A00F13C61 /* MYCustomLayout.m in Sources */,
 				ED28A44E1F0CEDD20033940C /* UIImage+Extension.m in Sources */,
 				ED28A4451F0CDB4C0033940C /* LaunchView.m in Sources */,
+				ED6921821F14BE7600F13C61 /* MYWorkViewController.m in Sources */,
 				ED65E0A01F0CD1EA00EE1F20 /* main.m in Sources */,
 				ED28A45D1F0DDFB80033940C /* MYBirthdayViewController.m in Sources */,
 				ED28A47F1F0F86430033940C /* MYMineInfoViewController.m in Sources */,

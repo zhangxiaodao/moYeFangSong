@@ -50,6 +50,7 @@
 #define k25 kScreenW/15
 #define k26 kScreenW/14.4
 #define k30 kScreenW/12.5
+#define k35 kScreenW/10.71
 #define k40 kScreenW/9.375
 #define k50 kScreenW/7.5
 #define k60 kScreenW/6.25

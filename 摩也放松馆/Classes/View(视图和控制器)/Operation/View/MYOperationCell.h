@@ -9,8 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface MYOperationCell : UICollectionViewCell
-@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
-@property (weak, nonatomic) IBOutlet UIImageView *backImage;
 
+@property (nonatomic , copy) NSString *imageName;
+@property (nonatomic , copy) NSString *text;
 
 @end

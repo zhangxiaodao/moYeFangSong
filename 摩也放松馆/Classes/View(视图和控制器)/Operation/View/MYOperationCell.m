@@ -8,6 +8,26 @@
 
 #import "MYOperationCell.h"
 
+@interface MYOperationCell ()
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *backImage;
+@end
+
 @implementation MYOperationCell
+
+- (void)setText:(NSString *)text {
+    _text = text;
+    
+    if (_text) {
+        self.titleLabel.text = text;
+    }
+}
+
+- (void)setImageName:(NSString *)imageName {
+    _imageName = imageName;
+    if (_imageName) {
+        self.backImage.image = [UIImage imageNamed:_imageName];
+    }
+}
 
 @end

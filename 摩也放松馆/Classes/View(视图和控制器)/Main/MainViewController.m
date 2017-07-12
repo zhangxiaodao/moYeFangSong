@@ -27,9 +27,9 @@
     }
     
     NSArray *array = @[
-  @{@"clsName": @"MYOperationViewController" ,@"title":@"放松管" , @"imageName":@"" , @"storyboard":@"MYOperationViewController"} ,
-  @{@"clsName": @"MYAddServiceViewController" ,@"title":@"设备" , @"imageName":@""} ,
-  @{@"clsName": @"MYMineInfoViewController" ,@"title":@"其他" , @"imageName":@""}];
+  @{@"clsName": @"MYOperationViewController" ,@"title":@"放松管" , @"imageName":@"fangSongGuan"} ,
+  @{@"clsName": @"MYAddServiceViewController" ,@"title":@"设备" , @"imageName":@"sheBei"} ,
+  @{@"clsName": @"MYMineInfoViewController" ,@"title":@"其他" , @"imageName":@"qiTa"}];
     NSMutableArray *arrayVC = [NSMutableArray array];
     
     for (NSDictionary *dict in array) {
@@ -43,12 +43,15 @@
 - (UINavigationController *)controllers:(NSDictionary *)dict {
     NSString *title = dict[@"title"];
     NSString *imageName = dict[@"imageName"];
-//    NSString *storyboard = dict[@"storyboard"];
     NSString *clsName = dict[@"clsName"];
     Class cls = NSClassFromString(clsName);
     
-    
-    UIViewController *vc = [[cls alloc]init];
+    UIViewController *vc = nil;
+    if ([clsName isEqualToString:@"MYOperationViewController"]) {
+        vc = [[UIStoryboard storyboardWithName:@"MYOperationViewController" bundle:nil] instantiateViewControllerWithIdentifier:@"MYOperationViewController"];
+    } else {
+        vc = [[cls alloc]init];
+    }
     
     vc.title = title;
     vc.tabBarItem.image = [UIImage imageNamed:imageName];
