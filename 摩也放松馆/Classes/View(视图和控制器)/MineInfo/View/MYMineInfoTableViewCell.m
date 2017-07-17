@@ -98,7 +98,13 @@
 - (void)setIndexPath:(NSIndexPath *)indexPath {
     _indexPath = indexPath;
     
-    if (_indexPath.section == 0 || _indexPath.section == 1) {
+    if (_indexPath.section == 0) {
+        if (_indexPath.row == 0) {
+            self.centerView.hidden = YES;
+        }
+    }
+    
+    if (_indexPath.section == 1) {
         if (_indexPath.row == 0) {
             self.bottomView.hidden = YES;
         } else if (_indexPath.row == 1) {
@@ -122,7 +128,7 @@
 - (NSMutableArray *)nameArray {
     if (!_nameArray) {
         _nameArray = [NSMutableArray array];
-        [_nameArray addObject:@[@"个人信息" , @"使用记录"]];
+        [_nameArray addObject:@[@"个人信息"]];
         [_nameArray addObject:@[@"常见问题" ,@"意见反馈"]];
         [_nameArray addObject:@[@"关于"]];
     }
@@ -132,7 +138,7 @@
 - (NSMutableArray *)imageArray {
     if (!_imageArray) {
         _imageArray = [NSMutableArray array];
-        [_imageArray addObject:@[@"userInfo" , @"userRecord"]];
+        [_imageArray addObject:@[@"userInfo"]];
         [_imageArray addObject:@[@"question" , @"message"]];
         [_imageArray addObject:@[@"about"]];
     }

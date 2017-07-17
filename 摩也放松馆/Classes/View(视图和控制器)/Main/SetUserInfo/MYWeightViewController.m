@@ -24,7 +24,6 @@
 }
 
 - (void)setupUI {
-    [super setupUI];
     
     self.titlelabel.text = @"请选择您的体重";
     
@@ -65,11 +64,14 @@
         make.size.mas_equalTo(CGSizeMake(kScreenW / 2, kScreenW / 8));
     }];
     self.weightLabel = weightLabel;
+    NSString *text = @"50kg";
+    self.weightLabel.attributedText = [NSAttributedString cz_AttributedSubString:NSMakeRange(text.length - 2, 2) attributedSize:k14 attributedColor:[UIColor lightGrayColor] text:text];
 }
 
 - (void)nextbtnAtcion {
     MYPhoneViewController *phoneVC = [[MYPhoneViewController alloc]init];
     phoneVC.navigationItem.title = @"完善个人信息(5/5)";
+    phoneVC.model = self.model;
     [self.navigationController pushViewController:phoneVC animated:YES];
 }
 
@@ -77,6 +79,7 @@
 - (void)dividingRuleCurrentVaule:(MYDividingRuleScrollView *)rulerScrollView {
     NSString *text = [NSString stringWithFormat:@"%.0fkg",rulerScrollView.rulerValue];
     self.weightLabel.attributedText = [NSAttributedString cz_AttributedSubString:NSMakeRange(text.length - 2, 2) attributedSize:k14 attributedColor:[UIColor lightGrayColor] text:text];
+    self.model.weight = self.weightLabel.attributedText.string;
 }
 
 @end

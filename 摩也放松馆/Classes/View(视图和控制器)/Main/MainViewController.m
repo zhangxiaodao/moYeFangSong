@@ -9,6 +9,7 @@
 #import "MainViewController.h"
 #import "LaunchView.h"
 #import "MYNavViewController.h"
+#import "MYSexViewController.h"
 
 @interface MainViewController ()
 
@@ -26,18 +27,19 @@
         [self.view addSubview:launchView];
     }
     
+    
     NSArray *array = @[
-  @{@"clsName": @"MYOperationViewController" ,@"title":@"放松管" , @"imageName":@"fangSongGuan"} ,
-  @{@"clsName": @"MYAddServiceViewController" ,@"title":@"设备" , @"imageName":@"sheBei"} ,
-  @{@"clsName": @"MYMineInfoViewController" ,@"title":@"其他" , @"imageName":@"qiTa"}];
+                       @{@"clsName": @"MYOperationViewController" ,@"title":@"放松管" , @"imageName":@"fangSongGuan"} ,
+                       @{@"clsName": @"MYAddServiceViewController" ,@"title":@"设备" , @"imageName":@"sheBei"} ,
+                       @{@"clsName": @"MYMineInfoViewController" ,@"title":@"其他" , @"imageName":@"qiTa"}];
     NSMutableArray *arrayVC = [NSMutableArray array];
     
     for (NSDictionary *dict in array) {
         [arrayVC addObject:[self controllers:dict]];
     }
-    
     self.viewControllers = arrayVC;
     self.tabBar.tintColor = kMainColor;
+    
 }
 
 - (UINavigationController *)controllers:(NSDictionary *)dict {

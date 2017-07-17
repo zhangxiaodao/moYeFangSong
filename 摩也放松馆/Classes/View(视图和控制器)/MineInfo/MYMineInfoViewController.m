@@ -8,10 +8,12 @@
 
 #import "MYMineInfoViewController.h"
 #import "MYMineInfoTableViewCell.h"
+
 static NSString *cellID = @"cellID";
 
 @interface MYMineInfoViewController ()<UITableViewDelegate , UITableViewDataSource>
-
+@property (nonatomic , strong) NSArray *arrayVC;
+@property (nonatomic , strong) NSArray *nameArray;
 @end
 
 @implementation MYMineInfoViewController
@@ -43,7 +45,7 @@ static NSString *cellID = @"cellID";
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     if (section == 0) {
-        return 2;
+        return 1;
     } else if (section == 1) {
         return 2;
     } else {
@@ -55,7 +57,6 @@ static NSString *cellID = @"cellID";
     return kScreenW / 5.8;
 }
 
-#pragma mark - UITableViewDelegate
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 
     MYMineInfoTableViewCell *cell = (MYMineInfoTableViewCell *)[tableView dequeueReusableCellWithIdentifier:cellID forIndexPath:indexPath];
@@ -69,11 +70,43 @@ static NSString *cellID = @"cellID";
     return kScreenW / 18.75;
 }
 
+#pragma mark - UITableViewDelegate
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
     UIView *view = [[UIView alloc]init];
     view.backgroundColor = [UIColor clearColor];
     return view;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSArray *array = self.arrayVC[indexPath.section];
+    NSArray *name = self.nameArray[indexPath.section];
+    NSString *clsName = array[indexPath.row];
+    UIViewController *vc = [[NSClassFromString(clsName) alloc] init];
+    vc.navigationItem.title = name[indexPath.row];
+    [self.navigationController pushViewController:vc animated:YES];
+    
+}
 
+#pragma mark - 懒加载
+- (NSArray *)arrayVC {
+    if (!_arrayVC) {
+        _arrayVC = @[@[@"MYUserInfoViewController" ,
+                       @"MYUserRecoderViewController"] ,
+                     @[@"MYCommonQuestionViewController" ,
+                       @"MYFeedBackViewController"] ,
+                     @[@"MYAboutViewController"]];
+    }
+    return _arrayVC;
+}
+
+- (NSArray *)nameArray {
+    if (!_nameArray) {
+        _nameArray = @[@[@"个人信息" ,
+                         @"使用记录"],
+                       @[@"常见问题" ,
+                         @"意见反馈"],
+                       @[@"关于"]];
+    }
+    return _nameArray;
+}
 @end

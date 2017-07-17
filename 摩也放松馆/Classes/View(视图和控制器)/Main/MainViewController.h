@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface MainViewController : UITabBarController
-
+@property (nonatomic , strong) MYUserInfoModel *model;
 @end

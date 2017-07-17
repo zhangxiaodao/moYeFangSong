@@ -10,12 +10,13 @@
 
 @protocol MYWorkTypeBtnViewDelegate <NSObject>
 
-- (NSInteger)touchWhitchBtn:(NSInteger)item;
+- (void)touchWhitchBtn:(NSInteger)item;
 
 @end
 
 @interface MYWorkTypeBtnView : UIView
 
 @property (nonatomic , assign) id<MYWorkTypeBtnViewDelegate> delegate;
-
+- (void)btnAtcion:(UIButton *)btn;
+@property (nonatomic , strong) NSArray *typeArray;
 @end

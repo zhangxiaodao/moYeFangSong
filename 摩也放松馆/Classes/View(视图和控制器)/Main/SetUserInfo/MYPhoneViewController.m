@@ -9,8 +9,9 @@
 #import "MYPhoneViewController.h"
 #import "MYPhoneView.h"
 #import "MainViewController.h"
-@interface MYPhoneViewController ()
-
+#import "UIAlertController+Custom.h"
+@interface MYPhoneViewController ()<UITextFieldDelegate>
+@property (nonatomic , strong) UITextField *phoneTextfiled;
 @end
 
 @implementation MYPhoneViewController
@@ -23,7 +24,7 @@
 }
 
 - (void)setupUI {
-    [super setupUI];
+    
     
     self.titlelabel.text = @"请输入您的手机号";
     
@@ -40,12 +41,45 @@
         make.size.mas_equalTo(CGSizeMake(kScreenW / 1.4, kScreenW / 8.3));
     }];
     phoneView.backgroundColor = kWhiteColor;
+    
+    UITextField *textfiled = phoneView.subviews[1];
+    textfiled.delegate = self;
+    self.phoneTextfiled = textfiled;
+}
+
+- (void)textFieldDidEndEditing:(UITextField *)textField {
+    
+    if (textField.text.length != 11) {
+        [UIAlertController creatCancleAndRightAlertControllerWithHandle:^{
+            textField.text = nil;
+        } andSuperViewController:self Title:@"手机号码输入有误"];
+    } else {
+        self.model.phoneNumber = textField.text;
+    }
+    
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    
+    
+    [self delegateAtcion];
 }
 
 - (void)nextbtnAtcion {
     
+    
     MainViewController *mainVC = [[MainViewController alloc]init];
+    mainVC.model = self.model;
+    
+    [kStanderDefault setObject:self.model forKey:@"UserInfoModel"];
+    
+    [kStanderDefault setObject:@"NO" forKey:@"SetUserInfo"];
     kWindowRoot = mainVC;
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    [self.view endEditing:YES];
 }
 
 @end

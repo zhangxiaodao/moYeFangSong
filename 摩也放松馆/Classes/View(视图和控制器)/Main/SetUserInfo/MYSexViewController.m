@@ -12,6 +12,7 @@
 @interface MYSexViewController ()
 @property (nonatomic , strong) UIImageView *manIv;
 @property (nonatomic , strong) UIImageView *womanIv;
+
 @end
 
 @implementation MYSexViewController
@@ -19,14 +20,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    
     [self setupUI];
     
 }
 
 - (void)setupUI {
-    
-    [super setupUI];
     
     self.titlelabel.text = @"请选择您的性别";
     
@@ -75,14 +73,17 @@
     self.manIv.image = [UIImage imageNamed:@"man"];
     if ([tap.view isEqual:self.womanIv]) {
         self.womanIv.image = [UIImage imageNamed:@"woman_selected"];
+        self.model.sex = @"女";
     } else {
         self.manIv.image = [UIImage imageNamed:@"man_selected"];
+        self.model.sex = @"男";
     }
 }
 
 - (void)nextbtnAtcion {
     MYBirthdayViewController *birthdayVC = [[MYBirthdayViewController alloc]init];
     birthdayVC.navigationItem.title = @"完善个人信息(2/5)";
+    birthdayVC.model = self.model;
     [self.navigationController pushViewController:birthdayVC animated:YES];
 }
 

@@ -27,13 +27,15 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="OLK-4Y-6Rz" secondAttribute="bottom" id="3gN-fv-saZ"/>
-                            <constraint firstItem="OLK-4Y-6Rz" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" id="fDB-ae-cnD"/>
-                            <constraint firstItem="OLK-4Y-6Rz" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="rs2-Xt-lnu"/>
-                            <constraint firstAttribute="trailing" secondItem="OLK-4Y-6Rz" secondAttribute="trailing" id="uWP-No-3rv"/>
+                            <constraint firstItem="OLK-4Y-6Rz" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="1yR-2R-jhd"/>
+                            <constraint firstItem="OLK-4Y-6Rz" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="6TP-gT-nme"/>
+                            <constraint firstAttribute="bottom" secondItem="OLK-4Y-6Rz" secondAttribute="bottom" id="NAe-Ve-e67"/>
+                            <constraint firstAttribute="trailing" secondItem="OLK-4Y-6Rz" secondAttribute="trailing" id="ilT-LJ-yWS"/>
                         </constraints>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

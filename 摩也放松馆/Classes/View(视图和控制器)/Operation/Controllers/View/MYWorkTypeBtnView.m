@@ -9,35 +9,30 @@
 #import "MYWorkTypeBtnView.h"
 
 @interface MYWorkTypeBtnView ()
-@property (nonatomic , strong) NSArray *typeArray;
 
 @end
 
 @implementation MYWorkTypeBtnView
 
-- (NSArray *)typeArray {
-    if (!_typeArray) {
-        _typeArray = [NSArray arrayWithObjects: @"揉", @"按", @"挤", @"抚", @"肘", @"锤", nil];
-    }
-    return _typeArray;
-}
 
-- (instancetype)initWithFrame:(CGRect)frame {
-    self = [super initWithFrame:frame];
-    if (self) {
-        
-        CGFloat btnW = (frame.size.width - kScreenW / 9.375) / self.typeArray.count;
+
+- (void)setTypeArray:(NSArray *)typeArray {
+    _typeArray = typeArray;
+    
+    if (_typeArray) {
+        CGFloat btnW = (self.frame.size.width - kScreenW / 9.375) / self.typeArray.count;
         
         for (int i = 0; i < self.typeArray.count; i++) {
             UIButton *btn = [UIButton cz_textButton:self.typeArray[i] fontSize:k15 normalColor:kWhiteColor highlightedColor:kWhiteColor];
             [self addSubview:btn];
             [btn mas_makeConstraints:^(MASConstraintMaker *make) {
-                make.size.mas_equalTo(CGSizeMake(btnW , frame.size.height));
+                make.size.mas_equalTo(CGSizeMake(btnW , self.frame.size.height));
                 make.centerY.mas_equalTo(self.mas_centerY);
                 make.left.mas_equalTo(self.mas_left).offset(kScreenW / 18.75 + i * btnW);
             }];
             btn.tag = i;
             [btn addTarget:self action:@selector(btnAtcion:) forControlEvents:UIControlEventTouchUpInside];
+            [btn addTarget:self action:@selector(sendDelegateAtcion:) forControlEvents:UIControlEventTouchDown];
             
             UIView *selectedView = [[UIView alloc]init];
             [btn addSubview:selectedView];
@@ -51,6 +46,13 @@
             selectedView.hidden = YES;
             
         }
+    }
+    
+}
+
+- (instancetype)initWithFrame:(CGRect)frame {
+    self = [super initWithFrame:frame];
+    if (self) {
         
         UIView *bottomView = [[UIView alloc]init];
         [self addSubview:bottomView];
@@ -74,10 +76,12 @@
     }
     UIView *selectedView = [btn viewWithTag:btn.tag + 50];
     selectedView.hidden = NO;
-    
-    NSInteger index = [self.delegate touchWhitchBtn:btn.tag];
-    
-    NSLog(@"%ld" , index);
+}
+
+- (void)sendDelegateAtcion:(UIButton *)btn {
+    if (self.delegate && [self.delegate respondsToSelector:@selector(touchWhitchBtn:)]) {
+        [self.delegate touchWhitchBtn:btn.tag];
+    }
     
 }
 

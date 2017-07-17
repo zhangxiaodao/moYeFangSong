@@ -52,12 +52,22 @@
 		ED6921781F132BA200F13C61 /* MYMineInfoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ED6921771F132BA200F13C61 /* MYMineInfoTableViewCell.m */; };
 		ED69217B1F13646F00F13C61 /* MYSearchSerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED69217A1F13646F00F13C61 /* MYSearchSerViewController.m */; };
 		ED69217E1F136F5400F13C61 /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = ED69217D1F136F5400F13C61 /* UIBarButtonItem+Extension.m */; };
-		ED6921821F14BE7600F13C61 /* MYWorkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED6921811F14BE7600F13C61 /* MYWorkViewController.m */; };
+		ED6921821F14BE7600F13C61 /* MYWorkViewBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED6921811F14BE7600F13C61 /* MYWorkViewBaseController.m */; };
 		ED69218A1F14CC3F00F13C61 /* MYWorkTypeBtnView.m in Sources */ = {isa = PBXBuildFile; fileRef = ED6921891F14CC3F00F13C61 /* MYWorkTypeBtnView.m */; };
 		ED69218D1F14CC6A00F13C61 /* MYCustomLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = ED69218C1F14CC6A00F13C61 /* MYCustomLayout.m */; };
 		ED6921901F15D25500F13C61 /* MYWorkCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ED69218F1F15D25500F13C61 /* MYWorkCollectionViewCell.m */; };
 		ED6921931F16045500F13C61 /* MYPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = ED6921921F16045500F13C61 /* MYPickerView.m */; };
 		ED6921961F1605AC00F13C61 /* MYGearView.m in Sources */ = {isa = PBXBuildFile; fileRef = ED6921951F1605AC00F13C61 /* MYGearView.m */; };
+		ED69221B1F18708200F13C61 /* MYBLETools.m in Sources */ = {isa = PBXBuildFile; fileRef = ED69221A1F18708200F13C61 /* MYBLETools.m */; };
+		ED69221E1F18737400F13C61 /* UIAlertController+Custom.m in Sources */ = {isa = PBXBuildFile; fileRef = ED69221D1F18737400F13C61 /* UIAlertController+Custom.m */; };
+		EDAE95011F1C53AC00A6BCCA /* MYUserInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EDAE95001F1C53AB00A6BCCA /* MYUserInfoModel.m */; };
+		EDAE95081F1C66D500A6BCCA /* MYUserRecoderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDAE95071F1C66D500A6BCCA /* MYUserRecoderViewController.m */; };
+		EDAE950B1F1C66DE00A6BCCA /* MYCommonQuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDAE950A1F1C66DE00A6BCCA /* MYCommonQuestionViewController.m */; };
+		EDAE950E1F1C66E600A6BCCA /* MYFeedBackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDAE950D1F1C66E600A6BCCA /* MYFeedBackViewController.m */; };
+		EDAE95111F1C66EE00A6BCCA /* MYAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDAE95101F1C66EE00A6BCCA /* MYAboutViewController.m */; };
+		EDAE95151F1C67D800A6BCCA /* MYUserInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDAE95141F1C67D800A6BCCA /* MYUserInfoViewController.m */; };
+		EDAE951B1F1CB59A00A6BCCA /* MYQuestionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = EDAE951A1F1CB59A00A6BCCA /* MYQuestionHeaderView.m */; };
+		EDAE951E1F1CBAD000A6BCCA /* MYCalculateHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = EDAE951D1F1CBAD000A6BCCA /* MYCalculateHeight.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -169,8 +179,8 @@
 		ED69217A1F13646F00F13C61 /* MYSearchSerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYSearchSerViewController.m; sourceTree = "<group>"; };
 		ED69217C1F136F5400F13C61 /* UIBarButtonItem+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Extension.h"; sourceTree = "<group>"; };
 		ED69217D1F136F5400F13C61 /* UIBarButtonItem+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extension.m"; sourceTree = "<group>"; };
-		ED6921801F14BE7600F13C61 /* MYWorkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYWorkViewController.h; sourceTree = "<group>"; };
-		ED6921811F14BE7600F13C61 /* MYWorkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYWorkViewController.m; sourceTree = "<group>"; };
+		ED6921801F14BE7600F13C61 /* MYWorkViewBaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYWorkViewBaseController.h; sourceTree = "<group>"; };
+		ED6921811F14BE7600F13C61 /* MYWorkViewBaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYWorkViewBaseController.m; sourceTree = "<group>"; };
 		ED6921881F14CC3F00F13C61 /* MYWorkTypeBtnView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYWorkTypeBtnView.h; sourceTree = "<group>"; };
 		ED6921891F14CC3F00F13C61 /* MYWorkTypeBtnView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYWorkTypeBtnView.m; sourceTree = "<group>"; };
 		ED69218B1F14CC6A00F13C61 /* MYCustomLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYCustomLayout.h; sourceTree = "<group>"; };
@@ -181,6 +191,26 @@
 		ED6921921F16045500F13C61 /* MYPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYPickerView.m; sourceTree = "<group>"; };
 		ED6921941F1605AC00F13C61 /* MYGearView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYGearView.h; sourceTree = "<group>"; };
 		ED6921951F1605AC00F13C61 /* MYGearView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYGearView.m; sourceTree = "<group>"; };
+		ED6922191F18708200F13C61 /* MYBLETools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYBLETools.h; sourceTree = "<group>"; };
+		ED69221A1F18708200F13C61 /* MYBLETools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYBLETools.m; sourceTree = "<group>"; };
+		ED69221C1F18737400F13C61 /* UIAlertController+Custom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+Custom.h"; sourceTree = "<group>"; };
+		ED69221D1F18737400F13C61 /* UIAlertController+Custom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+Custom.m"; sourceTree = "<group>"; };
+		EDAE94FF1F1C53AB00A6BCCA /* MYUserInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYUserInfoModel.h; sourceTree = "<group>"; };
+		EDAE95001F1C53AB00A6BCCA /* MYUserInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYUserInfoModel.m; sourceTree = "<group>"; };
+		EDAE95061F1C66D500A6BCCA /* MYUserRecoderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYUserRecoderViewController.h; sourceTree = "<group>"; };
+		EDAE95071F1C66D500A6BCCA /* MYUserRecoderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYUserRecoderViewController.m; sourceTree = "<group>"; };
+		EDAE95091F1C66DE00A6BCCA /* MYCommonQuestionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYCommonQuestionViewController.h; sourceTree = "<group>"; };
+		EDAE950A1F1C66DE00A6BCCA /* MYCommonQuestionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYCommonQuestionViewController.m; sourceTree = "<group>"; };
+		EDAE950C1F1C66E600A6BCCA /* MYFeedBackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYFeedBackViewController.h; sourceTree = "<group>"; };
+		EDAE950D1F1C66E600A6BCCA /* MYFeedBackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYFeedBackViewController.m; sourceTree = "<group>"; };
+		EDAE950F1F1C66EE00A6BCCA /* MYAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYAboutViewController.h; sourceTree = "<group>"; };
+		EDAE95101F1C66EE00A6BCCA /* MYAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYAboutViewController.m; sourceTree = "<group>"; };
+		EDAE95131F1C67D800A6BCCA /* MYUserInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYUserInfoViewController.h; sourceTree = "<group>"; };
+		EDAE95141F1C67D800A6BCCA /* MYUserInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYUserInfoViewController.m; sourceTree = "<group>"; };
+		EDAE95191F1CB59A00A6BCCA /* MYQuestionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYQuestionHeaderView.h; sourceTree = "<group>"; };
+		EDAE951A1F1CB59A00A6BCCA /* MYQuestionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYQuestionHeaderView.m; sourceTree = "<group>"; };
+		EDAE951C1F1CBAD000A6BCCA /* MYCalculateHeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYCalculateHeight.h; sourceTree = "<group>"; };
+		EDAE951D1F1CBAD000A6BCCA /* MYCalculateHeight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYCalculateHeight.m; sourceTree = "<group>"; };
 		F8431E2ABB092BFFEF6F91B4 /* libPods-摩也放松馆.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-摩也放松馆.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -248,6 +278,7 @@
 		ED28A40F1F0CDB4C0033940C /* Tools(工具) */ = {
 			isa = PBXGroup;
 			children = (
+				ED6922181F18707200F13C61 /* BLETools */,
 				ED28A46A1F0F215B0033940C /* CustomTools */,
 				ED28A4101F0CDB4C0033940C /* Additions */,
 			);
@@ -346,6 +377,7 @@
 		ED28A4341F0CDB4C0033940C /* SetUserInfo */ = {
 			isa = PBXGroup;
 			children = (
+				EDAE94FE1F1C539A00A6BCCA /* Model */,
 				ED28A4671F0E0E170033940C /* MYUserInfoBaseViewController.h */,
 				ED28A4681F0E0E170033940C /* MYUserInfoBaseViewController.m */,
 				ED28A4581F0DDF6A0033940C /* MYSexViewController.h */,
@@ -369,6 +401,11 @@
 			children = (
 				ED28A47D1F0F86430033940C /* MYMineInfoViewController.h */,
 				ED28A47E1F0F86430033940C /* MYMineInfoViewController.m */,
+				EDAE95121F1C67D000A6BCCA /* UserInfoVC */,
+				EDAE95051F1C66B000A6BCCA /* UserRecoderVC */,
+				EDAE95031F1C66B000A6BCCA /* CommonQuestionVC */,
+				EDAE95041F1C66B000A6BCCA /* FeedBackVC */,
+				EDAE95021F1C66B000A6BCCA /* AboutVC */,
 				ED6921751F132B8200F13C61 /* View */,
 			);
 			path = MineInfo;
@@ -396,10 +433,14 @@
 		ED28A46A1F0F215B0033940C /* CustomTools */ = {
 			isa = PBXGroup;
 			children = (
+				ED69221C1F18737400F13C61 /* UIAlertController+Custom.h */,
+				ED69221D1F18737400F13C61 /* UIAlertController+Custom.m */,
 				ED28A46B1F0F21970033940C /* MYDividingRuleScrollView.h */,
 				ED28A46C1F0F21970033940C /* MYDividingRuleScrollView.m */,
 				ED28A46E1F0F2B310033940C /* MYDividingRuleView.h */,
 				ED28A46F1F0F2B310033940C /* MYDividingRuleView.m */,
+				EDAE951C1F1CBAD000A6BCCA /* MYCalculateHeight.h */,
+				EDAE951D1F1CBAD000A6BCCA /* MYCalculateHeight.m */,
 			);
 			name = CustomTools;
 			sourceTree = "<group>";
@@ -488,8 +529,8 @@
 		ED69217F1F14BE5E00F13C61 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				ED6921801F14BE7600F13C61 /* MYWorkViewController.h */,
-				ED6921811F14BE7600F13C61 /* MYWorkViewController.m */,
+				ED6921801F14BE7600F13C61 /* MYWorkViewBaseController.h */,
+				ED6921811F14BE7600F13C61 /* MYWorkViewBaseController.m */,
 				ED6921871F14CC3F00F13C61 /* View */,
 			);
 			path = Controllers;
@@ -510,6 +551,71 @@
 				ED6921921F16045500F13C61 /* MYPickerView.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		ED6922181F18707200F13C61 /* BLETools */ = {
+			isa = PBXGroup;
+			children = (
+				ED6922191F18708200F13C61 /* MYBLETools.h */,
+				ED69221A1F18708200F13C61 /* MYBLETools.m */,
+			);
+			path = BLETools;
+			sourceTree = "<group>";
+		};
+		EDAE94FE1F1C539A00A6BCCA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EDAE94FF1F1C53AB00A6BCCA /* MYUserInfoModel.h */,
+				EDAE95001F1C53AB00A6BCCA /* MYUserInfoModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EDAE95021F1C66B000A6BCCA /* AboutVC */ = {
+			isa = PBXGroup;
+			children = (
+				EDAE950F1F1C66EE00A6BCCA /* MYAboutViewController.h */,
+				EDAE95101F1C66EE00A6BCCA /* MYAboutViewController.m */,
+			);
+			path = AboutVC;
+			sourceTree = "<group>";
+		};
+		EDAE95031F1C66B000A6BCCA /* CommonQuestionVC */ = {
+			isa = PBXGroup;
+			children = (
+				EDAE95091F1C66DE00A6BCCA /* MYCommonQuestionViewController.h */,
+				EDAE950A1F1C66DE00A6BCCA /* MYCommonQuestionViewController.m */,
+				EDAE95191F1CB59A00A6BCCA /* MYQuestionHeaderView.h */,
+				EDAE951A1F1CB59A00A6BCCA /* MYQuestionHeaderView.m */,
+			);
+			path = CommonQuestionVC;
+			sourceTree = "<group>";
+		};
+		EDAE95041F1C66B000A6BCCA /* FeedBackVC */ = {
+			isa = PBXGroup;
+			children = (
+				EDAE950C1F1C66E600A6BCCA /* MYFeedBackViewController.h */,
+				EDAE950D1F1C66E600A6BCCA /* MYFeedBackViewController.m */,
+			);
+			path = FeedBackVC;
+			sourceTree = "<group>";
+		};
+		EDAE95051F1C66B000A6BCCA /* UserRecoderVC */ = {
+			isa = PBXGroup;
+			children = (
+				EDAE95061F1C66D500A6BCCA /* MYUserRecoderViewController.h */,
+				EDAE95071F1C66D500A6BCCA /* MYUserRecoderViewController.m */,
+			);
+			path = UserRecoderVC;
+			sourceTree = "<group>";
+		};
+		EDAE95121F1C67D000A6BCCA /* UserInfoVC */ = {
+			isa = PBXGroup;
+			children = (
+				EDAE95131F1C67D800A6BCCA /* MYUserInfoViewController.h */,
+				EDAE95141F1C67D800A6BCCA /* MYUserInfoViewController.m */,
+			);
+			path = UserInfoVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -709,6 +815,7 @@
 				ED28A4391F0CDB4C0033940C /* NSAttributedString+CZAdditon.m in Sources */,
 				ED28A4701F0F2B310033940C /* MYDividingRuleView.m in Sources */,
 				ED28A4571F0DDAC80033940C /* MYNavViewController.m in Sources */,
+				ED69221B1F18708200F13C61 /* MYBLETools.m in Sources */,
 				ED6921781F132BA200F13C61 /* MYMineInfoTableViewCell.m in Sources */,
 				ED28A43D1F0CDB4C0033940C /* NSString+CZPath.m in Sources */,
 				ED28A4661F0DE0030033940C /* MYPhoneViewController.m in Sources */,
@@ -716,6 +823,7 @@
 				ED6921901F15D25500F13C61 /* MYWorkCollectionViewCell.m in Sources */,
 				ED28A45A1F0DDF6A0033940C /* MYSexViewController.m in Sources */,
 				ED69217B1F13646F00F13C61 /* MYSearchSerViewController.m in Sources */,
+				EDAE95081F1C66D500A6BCCA /* MYUserRecoderViewController.m in Sources */,
 				ED28A46D1F0F21970033940C /* MYDividingRuleScrollView.m in Sources */,
 				ED65E0A31F0CD1EA00EE1F20 /* AppDelegate.m in Sources */,
 				ED28A44B1F0CDFC40033940C /* UIView+Extension.m in Sources */,
@@ -723,26 +831,34 @@
 				ED28A43E1F0CDB4C0033940C /* UIButton+CZAddition.m in Sources */,
 				ED28A4421F0CDB4C0033940C /* UIView+CZAddition.m in Sources */,
 				ED28A4731F0F73F30033940C /* UITextField+Custom.m in Sources */,
+				EDAE95111F1C66EE00A6BCCA /* MYAboutViewController.m in Sources */,
 				ED28A4471F0CDB4C0033940C /* MainViewController.m in Sources */,
 				ED28A43C1F0CDB4C0033940C /* NSString+CZHash.m in Sources */,
 				ED28A4761F0F74340033940C /* MYPhoneView.m in Sources */,
 				ED28A4401F0CDB4C0033940C /* UILabel+CZAddition.m in Sources */,
+				EDAE95151F1C67D800A6BCCA /* MYUserInfoViewController.m in Sources */,
 				ED28A43B1F0CDB4C0033940C /* NSString+CZBase64.m in Sources */,
 				ED6921961F1605AC00F13C61 /* MYGearView.m in Sources */,
 				ED28A43A1F0CDB4C0033940C /* NSObject+CZRuntime.m in Sources */,
 				ED28A4541F0DD7E90033940C /* CZBtnView.m in Sources */,
 				ED28A47C1F0F863C0033940C /* MYAddServiceViewController.m in Sources */,
+				EDAE95011F1C53AC00A6BCCA /* MYUserInfoModel.m in Sources */,
 				ED28A4791F0F86340033940C /* MYOperationViewController.m in Sources */,
+				EDAE951E1F1CBAD000A6BCCA /* MYCalculateHeight.m in Sources */,
 				ED28A4431F0CDB4C0033940C /* UIViewController+CZAddition.m in Sources */,
 				ED28A4411F0CDB4C0033940C /* UIScreen+CZAddition.m in Sources */,
 				ED69217E1F136F5400F13C61 /* UIBarButtonItem+Extension.m in Sources */,
 				ED28A4601F0DDFD90033940C /* MYHeightViewController.m in Sources */,
+				EDAE950E1F1C66E600A6BCCA /* MYFeedBackViewController.m in Sources */,
+				EDAE950B1F1C66DE00A6BCCA /* MYCommonQuestionViewController.m in Sources */,
+				ED69221E1F18737400F13C61 /* UIAlertController+Custom.m in Sources */,
 				ED69218D1F14CC6A00F13C61 /* MYCustomLayout.m in Sources */,
 				ED28A44E1F0CEDD20033940C /* UIImage+Extension.m in Sources */,
 				ED28A4451F0CDB4C0033940C /* LaunchView.m in Sources */,
-				ED6921821F14BE7600F13C61 /* MYWorkViewController.m in Sources */,
+				ED6921821F14BE7600F13C61 /* MYWorkViewBaseController.m in Sources */,
 				ED65E0A01F0CD1EA00EE1F20 /* main.m in Sources */,
 				ED28A45D1F0DDFB80033940C /* MYBirthdayViewController.m in Sources */,
+				EDAE951B1F1CB59A00A6BCCA /* MYQuestionHeaderView.m in Sources */,
 				ED28A47F1F0F86430033940C /* MYMineInfoViewController.m in Sources */,
 				ED28A4691F0E0E170033940C /* MYUserInfoBaseViewController.m in Sources */,
 			);

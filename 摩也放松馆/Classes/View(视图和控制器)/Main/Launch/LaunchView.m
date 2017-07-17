@@ -12,7 +12,7 @@
 
 @interface LaunchView ()<UIScrollViewDelegate>
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
-@property (nonatomic , strong) CZBtnView *btn;
+@property (nonatomic , strong) UIButton *btn;
 @end
 
 @implementation LaunchView
@@ -45,15 +45,16 @@
     _scrollView.delegate = self;
     
 
-    CZBtnView *btnView = [[CZBtnView alloc]initCZBtnViewOf:@"开启放松1.0时代" fontSize:k20 normalColor:kMainColor highlightedColor:nil  addTarget:self action:@selector(clickAtcion)];
-    [self addSubview:btnView];
-    [btnView mas_makeConstraints:^(MASConstraintMaker *make) {
+    UIButton *btn = [UIButton cz_textButton:@"开启放松1.0时代" fontSize:k20 normalColor:kWhiteColor highlightedColor:kCOLOR(89, 181, 226)];
+    [self addSubview:btn];
+    [btn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.size.mas_equalTo(CGSizeMake(kScreenW / 1.75, kScreenW / 7.5));
         make.centerX.mas_equalTo(self.mas_centerX);
         make.bottom.mas_equalTo(self.mas_bottom).offset(-kScreenW / 12.5);
     }];
-    btnView.hidden = YES;
-    self.btn = btnView;
+    [btn addTarget:self action:@selector(clickAtcion) forControlEvents:UIControlEventTouchUpInside];
+    btn.hidden = YES;
+    self.btn = btn;
     
 }
 
@@ -62,6 +63,8 @@
     [self removeFromSuperview];
 
     [kStanderDefault setObject:@"NO" forKey:@"FirstUse"];
+    
+    [kStanderDefault setObject:@"YES" forKey:@"SetUserInfo"];
     
     MYSexViewController *sexVC = [[MYSexViewController alloc]init];
     MYNavViewController *nav = [[MYNavViewController alloc]initWithRootViewController:sexVC];

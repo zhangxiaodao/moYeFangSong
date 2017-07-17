@@ -18,11 +18,16 @@
     [super viewDidLoad];
     self.view.backgroundColor = kCOLOR(249, 251, 252);
     
-    [self setupUI];
-}
-
-
-- (void)setupUI {
+    MYUserInfoModel *model = [[MYUserInfoModel alloc]init];
+    self.model = model;
+    self.model.sex = @"女";
+    self.model.birthday = @"1991-1-1";
+    self.model.height = @"170cm";
+    self.model.weight = @"50kg";
+    self.model.phoneNumber = @"";
+    
+    _rightBarItem = [UIBarButtonItem itemWithTarget:self action:@selector(delegateAtcion) image:@"nav_addSuucess_helighted" highImage:@"nav_addSuucess"];
+    
     UILabel *titlelabel = [UILabel cz_labelWithText:@"" fontSize:k15 color:kCOLOR(132, 145, 150) textAligment:NSTextAlignmentCenter superView:self.view];
     [titlelabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerX.mas_equalTo(self.view.mas_centerX);
@@ -69,8 +74,21 @@
     
     backbtn.hidden = YES;
     nextbtn.hidden = YES;
+    
+    
+    if ([self.bottomViewHidden isEqualToString:@"YES"]) {
+        bottomView.hidden = YES;
+        self.navigationItem.rightBarButtonItem = _rightBarItem;
+    }
 }
 
+- (void)delegateAtcion {
+    if (self.delegate && [self.delegate respondsToSelector:@selector(sendInfoToSuperVC:)]) {
+        [self.view endEditing:YES];
+        
+        [self.delegate sendInfoToSuperVC:self.model];
+    }
+}
 
 - (void)backbtnAtcion {
     [self.navigationController popViewControllerAnimated:YES];
@@ -78,6 +96,10 @@
 
 - (void)nextbtnAtcion {
     
+}
+
+- (void)setBottomViewHidden:(NSString *)bottomViewHidden {
+    _bottomViewHidden = bottomViewHidden;
 }
 
 @end

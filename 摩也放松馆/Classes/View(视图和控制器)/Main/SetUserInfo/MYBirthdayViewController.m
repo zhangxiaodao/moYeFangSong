@@ -13,6 +13,7 @@
 @property (nonatomic , strong) NSMutableArray *yearArray;
 @property (nonatomic , strong) NSMutableArray *monthArray;
 @property (nonatomic , strong) NSMutableArray *dayArray;
+@property (nonatomic , strong) UIPickerView *mypickerView;
 @end
 
 @implementation MYBirthdayViewController
@@ -23,7 +24,6 @@
 }
 
 - (void)setupUI {
-    [super setupUI];
     
     self.titlelabel.text = @"请选择您的出生日期";
     self.backbtn.hidden = NO;
@@ -46,6 +46,7 @@
     }];
     mypickerView.delegate = self;
     mypickerView.dataSource = self;
+    self.mypickerView = mypickerView;
     
     NSInteger integer = [self.yearArray indexOfObject:@"1987"];
     [mypickerView selectRow:integer inComponent:0 animated:YES];
@@ -69,9 +70,24 @@
 }
 
 - (void)nextbtnAtcion {
+    
+    [self getBirthday];
+    
     MYHeightViewController *heightVC = [[MYHeightViewController alloc]init];
     heightVC.navigationItem.title = @"完善个人信息(3/5)";
+    
+    heightVC.model = self.model;
     [self.navigationController pushViewController:heightVC animated:YES];
+}
+
+- (void)getBirthday {
+    NSString *year = self.yearArray[[self.mypickerView selectedRowInComponent:0]];
+    NSString *month = self.monthArray[[self.mypickerView selectedRowInComponent:1]];
+    NSString *day = self.dayArray[[self.mypickerView selectedRowInComponent:2]];
+    
+    NSString *birthday = [NSString stringWithFormat:@"%@-%@-%@" , year , month , day];
+    
+    self.model.birthday = birthday;
 }
 
 #pragma mark - UIPickerView Delegate
@@ -126,6 +142,10 @@
 #pragma mark - 设置间距
 - (CGFloat)pickerView:(UIPickerView *)pickerView rowHeightForComponent:(NSInteger)component {
     return kScreenW / 7.5;
+}
+
+- (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
+    [self getBirthday];
 }
 
 #pragma mark - 懒加载

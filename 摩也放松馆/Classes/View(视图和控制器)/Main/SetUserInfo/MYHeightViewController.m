@@ -26,12 +26,11 @@
 }
 
 - (void)setupUI {
-    [super setupUI];
     
     self.backbtn.hidden = NO;
     self.nextbtn.hidden = NO;
     
-    MYDividingRuleView *ruleView = [MYDividingRuleView showRulerWithFrame:CGRectMake(kScreenW / 1.5, 0, kScreenW / 4.4, kScreenH / 1.6) ruleCount:240 average:@(1) currentValue:100 horizontal:NO];
+    MYDividingRuleView *ruleView = [MYDividingRuleView showRulerWithFrame:CGRectMake(kScreenW / 1.5, 0, kScreenW / 4.4, kScreenH / 1.6) ruleCount:240 average:@(1) currentValue:170 horizontal:NO];
     [self.centerView addSubview:ruleView];
     ruleView.rulerDelegate = self;
     
@@ -47,14 +46,18 @@
     [heightLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerY.mas_equalTo(ruleView.mas_centerY);
         make.right.mas_equalTo(self.centerView.mas_centerX);
-        make.size.mas_equalTo(CGSizeMake(kScreenW / 2, kScreenW / 5));
+        make.size.mas_equalTo(CGSizeMake(kScreenW / 2, kScreenW / 9.375));
     }];
     self.heightLabel = heightLabel;
+    
+    NSString *text = @"170cm";
+    self.heightLabel.attributedText = [NSAttributedString cz_AttributedSubString:NSMakeRange(text.length - 2, 2) attributedSize:k14 attributedColor:[UIColor lightGrayColor] text:text];
 }
 
 - (void)nextbtnAtcion {
     MYWeightViewController *wightVC = [[MYWeightViewController alloc]init];
     wightVC.navigationItem.title = @"完善个人信息(4/5)";
+    wightVC.model = self.model;
     [self.navigationController pushViewController:wightVC animated:YES];
 }
 
@@ -62,6 +65,8 @@
 - (void)dividingRuleCurrentVaule:(MYDividingRuleScrollView *)rulerScrollView {
     NSString *text = [NSString stringWithFormat:@"%.0fcm",rulerScrollView.rulerValue];
     self.heightLabel.attributedText = [NSAttributedString cz_AttributedSubString:NSMakeRange(text.length - 2, 2) attributedSize:k14 attributedColor:[UIColor lightGrayColor] text:text];
+    self.model.height = self.heightLabel.attributedText.string;
+    
 }
 
 @end

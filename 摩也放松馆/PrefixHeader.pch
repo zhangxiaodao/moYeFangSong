@@ -12,7 +12,7 @@
 #import "UIImage+Extension.h"
 #import "CZAdditions.h"
 #import "CZBtnView.h"
-
+#import "MYUserInfoModel.h"
 
 #define kApplicate (AppDelegate *)[UIApplication sharedApplication].delegate
 #define kWindowRoot [UIApplication sharedApplication].keyWindow.rootViewController

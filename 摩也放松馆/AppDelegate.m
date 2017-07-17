@@ -8,7 +8,8 @@
 
 #import "AppDelegate.h"
 #import "MainViewController.h"
-
+#import "MYSexViewController.h"
+#import "MYNavViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -22,8 +23,17 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
-    MainViewController *mainVC = [[MainViewController alloc]init];
-    self.window.rootViewController = mainVC;
+    
+    NSString *setUserInfo = [kStanderDefault objectForKey:@"SetUserInfo"];
+    if ([setUserInfo isEqualToString:@"YES"]) {
+        MYSexViewController *sexVC = [[MYSexViewController alloc]init];
+        MYNavViewController *nav = [[MYNavViewController alloc]initWithRootViewController:sexVC];
+        sexVC.navigationItem.title = @"完善个人信息(1/5)";
+        self.window.rootViewController = nav;
+    } else {
+        MainViewController *mainVC = [[MainViewController alloc]init];
+        self.window.rootViewController = mainVC;
+    }
     
     return YES;
 }
