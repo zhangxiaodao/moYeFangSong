@@ -84,7 +84,7 @@ static NSString *cellID = @"cellID";
 }
 
 - (void)sendInfoToSuperVC:(MYUserInfoModel *)model {
-    NSLog(@"%@" , model);
+    
     self.model = model;
     
     [self.modelArray removeAllObjects];

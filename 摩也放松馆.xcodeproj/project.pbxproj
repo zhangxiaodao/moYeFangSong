@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4283D444996856CD6A450BF0 /* libPods-摩也放松馆.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F8431E2ABB092BFFEF6F91B4 /* libPods-摩也放松馆.a */; };
+		ED07F31A1F1DAD98009E19A3 /* MYQuestionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ED07F3191F1DAD98009E19A3 /* MYQuestionTableViewCell.m */; };
+		ED07F31D1F1DE3D8009E19A3 /* MYAboutViewHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = ED07F31C1F1DE3D8009E19A3 /* MYAboutViewHeaderView.m */; };
 		ED28A4381F0CDB4C0033940C /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = ED28A4131F0CDB4C0033940C /* NSArray+Log.m */; };
 		ED28A4391F0CDB4C0033940C /* NSAttributedString+CZAdditon.m in Sources */ = {isa = PBXBuildFile; fileRef = ED28A4151F0CDB4C0033940C /* NSAttributedString+CZAdditon.m */; };
 		ED28A43A1F0CDB4C0033940C /* NSObject+CZRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = ED28A4171F0CDB4C0033940C /* NSObject+CZRuntime.m */; };
@@ -43,6 +45,8 @@
 		ED28A4821F0F8B740033940C /* MYMainBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED28A4811F0F8B740033940C /* MYMainBaseViewController.m */; };
 		ED28A4861F0F8D740033940C /* MYOperationViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED28A4851F0F8D740033940C /* MYOperationViewController.storyboard */; };
 		ED28A48A1F0F908C0033940C /* MYOperationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ED28A4891F0F908C0033940C /* MYOperationCell.m */; };
+		ED626FE01F1E003A00705484 /* MYFeedBackInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = ED626FDF1F1E003A00705484 /* MYFeedBackInputView.m */; };
+		ED626FE31F1E048500705484 /* MYFeedBackTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ED626FE21F1E048500705484 /* MYFeedBackTableViewCell.m */; };
 		ED65E0A01F0CD1EA00EE1F20 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ED65E09F1F0CD1EA00EE1F20 /* main.m */; };
 		ED65E0A31F0CD1EA00EE1F20 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ED65E0A21F0CD1EA00EE1F20 /* AppDelegate.m */; };
 		ED65E0A51F0CD1EA00EE1F20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED65E0A41F0CD1EA00EE1F20 /* Assets.xcassets */; };
@@ -90,6 +94,10 @@
 /* Begin PBXFileReference section */
 		1376FDB835EDF64707C6E972 /* Pods-摩也放松馆.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-摩也放松馆.debug.xcconfig"; path = "Pods/Target Support Files/Pods-摩也放松馆/Pods-摩也放松馆.debug.xcconfig"; sourceTree = "<group>"; };
 		3D12B5C3E6B794669DD453FB /* Pods-摩也放松馆.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-摩也放松馆.release.xcconfig"; path = "Pods/Target Support Files/Pods-摩也放松馆/Pods-摩也放松馆.release.xcconfig"; sourceTree = "<group>"; };
+		ED07F3181F1DAD98009E19A3 /* MYQuestionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYQuestionTableViewCell.h; sourceTree = "<group>"; };
+		ED07F3191F1DAD98009E19A3 /* MYQuestionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYQuestionTableViewCell.m; sourceTree = "<group>"; };
+		ED07F31B1F1DE3D8009E19A3 /* MYAboutViewHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYAboutViewHeaderView.h; sourceTree = "<group>"; };
+		ED07F31C1F1DE3D8009E19A3 /* MYAboutViewHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYAboutViewHeaderView.m; sourceTree = "<group>"; };
 		ED28A3E41F0CD9240033940C /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		ED28A4111F0CDB4C0033940C /* CZAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZAdditions.h; sourceTree = "<group>"; };
 		ED28A4121F0CDB4C0033940C /* NSArray+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Log.h"; sourceTree = "<group>"; };
@@ -160,6 +168,10 @@
 		ED28A4851F0F8D740033940C /* MYOperationViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MYOperationViewController.storyboard; sourceTree = "<group>"; };
 		ED28A4881F0F908C0033940C /* MYOperationCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYOperationCell.h; sourceTree = "<group>"; };
 		ED28A4891F0F908C0033940C /* MYOperationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYOperationCell.m; sourceTree = "<group>"; };
+		ED626FDE1F1E003A00705484 /* MYFeedBackInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYFeedBackInputView.h; sourceTree = "<group>"; };
+		ED626FDF1F1E003A00705484 /* MYFeedBackInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYFeedBackInputView.m; sourceTree = "<group>"; };
+		ED626FE11F1E048500705484 /* MYFeedBackTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYFeedBackTableViewCell.h; sourceTree = "<group>"; };
+		ED626FE21F1E048500705484 /* MYFeedBackTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYFeedBackTableViewCell.m; sourceTree = "<group>"; };
 		ED65E09B1F0CD1EA00EE1F20 /* 摩也放松馆.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "摩也放松馆.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED65E09F1F0CD1EA00EE1F20 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		ED65E0A11F0CD1EA00EE1F20 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -576,6 +588,8 @@
 			children = (
 				EDAE950F1F1C66EE00A6BCCA /* MYAboutViewController.h */,
 				EDAE95101F1C66EE00A6BCCA /* MYAboutViewController.m */,
+				ED07F31B1F1DE3D8009E19A3 /* MYAboutViewHeaderView.h */,
+				ED07F31C1F1DE3D8009E19A3 /* MYAboutViewHeaderView.m */,
 			);
 			path = AboutVC;
 			sourceTree = "<group>";
@@ -587,6 +601,8 @@
 				EDAE950A1F1C66DE00A6BCCA /* MYCommonQuestionViewController.m */,
 				EDAE95191F1CB59A00A6BCCA /* MYQuestionHeaderView.h */,
 				EDAE951A1F1CB59A00A6BCCA /* MYQuestionHeaderView.m */,
+				ED07F3181F1DAD98009E19A3 /* MYQuestionTableViewCell.h */,
+				ED07F3191F1DAD98009E19A3 /* MYQuestionTableViewCell.m */,
 			);
 			path = CommonQuestionVC;
 			sourceTree = "<group>";
@@ -596,6 +612,10 @@
 			children = (
 				EDAE950C1F1C66E600A6BCCA /* MYFeedBackViewController.h */,
 				EDAE950D1F1C66E600A6BCCA /* MYFeedBackViewController.m */,
+				ED626FE11F1E048500705484 /* MYFeedBackTableViewCell.h */,
+				ED626FE21F1E048500705484 /* MYFeedBackTableViewCell.m */,
+				ED626FDE1F1E003A00705484 /* MYFeedBackInputView.h */,
+				ED626FDF1F1E003A00705484 /* MYFeedBackInputView.m */,
 			);
 			path = FeedBackVC;
 			sourceTree = "<group>";
@@ -809,11 +829,13 @@
 			files = (
 				ED69218A1F14CC3F00F13C61 /* MYWorkTypeBtnView.m in Sources */,
 				ED28A48A1F0F908C0033940C /* MYOperationCell.m in Sources */,
+				ED626FE31F1E048500705484 /* MYFeedBackTableViewCell.m in Sources */,
 				ED6921931F16045500F13C61 /* MYPickerView.m in Sources */,
 				ED28A4821F0F8B740033940C /* MYMainBaseViewController.m in Sources */,
 				ED28A43F1F0CDB4C0033940C /* UIColor+CZAddition.m in Sources */,
 				ED28A4391F0CDB4C0033940C /* NSAttributedString+CZAdditon.m in Sources */,
 				ED28A4701F0F2B310033940C /* MYDividingRuleView.m in Sources */,
+				ED07F31D1F1DE3D8009E19A3 /* MYAboutViewHeaderView.m in Sources */,
 				ED28A4571F0DDAC80033940C /* MYNavViewController.m in Sources */,
 				ED69221B1F18708200F13C61 /* MYBLETools.m in Sources */,
 				ED6921781F132BA200F13C61 /* MYMineInfoTableViewCell.m in Sources */,
@@ -821,6 +843,7 @@
 				ED28A4661F0DE0030033940C /* MYPhoneViewController.m in Sources */,
 				ED28A4381F0CDB4C0033940C /* NSArray+Log.m in Sources */,
 				ED6921901F15D25500F13C61 /* MYWorkCollectionViewCell.m in Sources */,
+				ED626FE01F1E003A00705484 /* MYFeedBackInputView.m in Sources */,
 				ED28A45A1F0DDF6A0033940C /* MYSexViewController.m in Sources */,
 				ED69217B1F13646F00F13C61 /* MYSearchSerViewController.m in Sources */,
 				EDAE95081F1C66D500A6BCCA /* MYUserRecoderViewController.m in Sources */,
@@ -844,6 +867,7 @@
 				ED28A47C1F0F863C0033940C /* MYAddServiceViewController.m in Sources */,
 				EDAE95011F1C53AC00A6BCCA /* MYUserInfoModel.m in Sources */,
 				ED28A4791F0F86340033940C /* MYOperationViewController.m in Sources */,
+				ED07F31A1F1DAD98009E19A3 /* MYQuestionTableViewCell.m in Sources */,
 				EDAE951E1F1CBAD000A6BCCA /* MYCalculateHeight.m in Sources */,
 				ED28A4431F0CDB4C0033940C /* UIViewController+CZAddition.m in Sources */,
 				ED28A4411F0CDB4C0033940C /* UIScreen+CZAddition.m in Sources */,
