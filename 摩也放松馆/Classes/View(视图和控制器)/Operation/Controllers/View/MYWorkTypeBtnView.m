@@ -69,7 +69,7 @@
 
 - (void)btnAtcion:(UIButton *)btn {
     
-    for (int i = 0; i < self.typeArray.count ; i++) {
+    for (int i = 1; i <= self.typeArray.count ; i++) {
         UIButton *button = self.subviews[i];
         UIView *selectView = [button viewWithTag:button.tag + 50];
         selectView.hidden = YES;

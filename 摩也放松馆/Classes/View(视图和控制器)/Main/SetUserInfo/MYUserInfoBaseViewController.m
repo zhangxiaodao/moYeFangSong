@@ -24,7 +24,7 @@
     self.model.birthday = @"1991-1-1";
     self.model.height = @"170cm";
     self.model.weight = @"50kg";
-    self.model.phoneNumber = @"";
+    self.model.phoneNumber = @"请输入手机号";
     
     _rightBarItem = [UIBarButtonItem itemWithTarget:self action:@selector(delegateAtcion) image:@"nav_addSuucess_helighted" highImage:@"nav_addSuucess"];
     
@@ -85,6 +85,8 @@
 - (void)delegateAtcion {
     if (self.delegate && [self.delegate respondsToSelector:@selector(sendInfoToSuperVC:)]) {
         [self.view endEditing:YES];
+        
+        [self.navigationController popViewControllerAnimated:YES];
         
         [self.delegate sendInfoToSuperVC:self.model];
     }

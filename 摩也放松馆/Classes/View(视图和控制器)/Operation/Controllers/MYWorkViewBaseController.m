@@ -11,7 +11,7 @@
 #import "MYCustomLayout.h"
 #import "MYWorkCollectionViewCell.h"
 #import "MYGearView.h"
-@interface MYWorkViewBaseController ()<MYWorkTypeBtnViewDelegate , UICollectionViewDataSource , UICollectionViewDelegate>
+@interface MYWorkViewBaseController ()<MYWorkTypeBtnViewDelegate , UICollectionViewDataSource , UICollectionViewDelegate , UIScrollViewDelegate>
 
 @end
 
@@ -54,6 +54,11 @@
     [self.view addSubview:btnView];
     btnView.typeArray = self.typeArray;
     btnView.delegate = self;
+    
+    //默认第一个处于选中状态
+    UIButton *btn = self.btnView.subviews[0];
+    [btnView btnAtcion:btn];
+    
     self.btnView = btnView;
     
     MYCustomLayout *layout = [[MYCustomLayout alloc]init];
@@ -92,6 +97,13 @@
     }];
     [switchBtn addTarget:self action:@selector(switchAtcion) forControlEvents:UIControlEventTouchUpInside];
     
+    if (self.typeArray.count == 0) {
+        self.btnView.hidden = YES;
+    }
+    if (self.imageNameAy.count == 0) {
+        self.collectionView.hidden = YES;
+    }
+    
 }
 
 #pragma mark - switchAtcion
@@ -111,13 +123,31 @@
     return cell;
 }
 
-#pragma mark - UICollectionViewDelegate
 - (void)collectionView:(UICollectionView *)collectionView willDisplayCell:(UICollectionViewCell *)cell forItemAtIndexPath:(NSIndexPath *)indexPath {
-    UIButton *btn = self.btnView.subviews[indexPath.item];
+    if (indexPath.item == 0) {
+        UIButton *btn = self.btnView.subviews[indexPath.item + 1];
+        [self.btnView btnAtcion:btn];
+    }
+}
+
+
+#pragma mark - UIScrollViewDelegate
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
     
+    CGFloat offsetX = (scrollView.contentOffset.x + kScreenW / 5) / kScreenW;
+    
+    NSInteger index = [self notRounding:offsetX afterPoint:0] + 1;
+    UIButton *btn = self.btnView.subviews[index];
     [self.btnView btnAtcion:btn];
-    
-    
+}
+
+- (NSInteger)notRounding:(CGFloat)price afterPoint:(NSInteger)position {
+    NSDecimalNumberHandler*roundingBehavior = [NSDecimalNumberHandler decimalNumberHandlerWithRoundingMode:NSRoundPlain scale:position raiseOnExactness:NO raiseOnOverflow:NO raiseOnUnderflow:NO raiseOnDivideByZero:NO];
+    NSDecimalNumber*ouncesDecimal;
+    NSDecimalNumber*roundedOunces;
+    ouncesDecimal = [[NSDecimalNumber alloc]initWithFloat:price];
+    roundedOunces = [ouncesDecimal decimalNumberByRoundingAccordingToBehavior:roundingBehavior];
+    return [roundedOunces integerValue];
 }
 
 #pragma mark - MYWorkTypeBtnViewDelegate
@@ -129,12 +159,12 @@
 }
 
 #pragma mark - 懒加载
-//- (void)setTypeArray:(NSArray *)typeArray {
-//    _typeArray = typeArray;
-//}
-//
-//- (void)setImageNameAy:(NSArray *)imageNameAy {
-//    _imageNameAy = imageNameAy;
-//}
+- (void)setTypeArray:(NSArray *)typeArray {
+    _typeArray = typeArray;
+}
+
+- (void)setImageNameAy:(NSArray *)imageNameAy {
+    _imageNameAy = imageNameAy;
+}
 
 @end

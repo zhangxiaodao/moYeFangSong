@@ -25,7 +25,15 @@ static NSString *cellID = @"cellID";
     
     self.model = [[MYUserInfoModel alloc]init];
     if ([kStanderDefault objectForKey:@"UserInfoModel"]) {
-        self.model = [kStanderDefault objectForKey:@"UserInfoModel"];
+//        self.model = [kStanderDefault objectForKey:@"UserInfoModel"];
+        
+        NSArray *array = [kStanderDefault objectForKey:@"UserInfoModel"];
+        self.model.sex = array[0];
+        self.model.birthday = array[1];
+        self.model.height = array[2];
+        self.model.weight = array[3];
+        self.model.phoneNumber = array[4];
+        
     } else {
         self.model.sex = @"女";
         self.model.birthday = @"1991-1-1";

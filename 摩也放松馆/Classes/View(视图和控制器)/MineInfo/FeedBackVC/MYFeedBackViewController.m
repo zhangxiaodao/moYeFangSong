@@ -10,12 +10,14 @@
 #import "MYFeedBackInputView.h"
 #import "MYFeedBackTableViewCell.h"
 #import "MYCalculateHeight.h"
+#import "MYFeedBackHeaderView.h"
 
 #define inputViewHeight (kScreenW / 6.8)
 @interface MYFeedBackViewController ()<UITableViewDataSource,UITableViewDelegate,UITextFieldDelegate>
 
 @property (nonatomic,strong) UITableView *tableView;
 @property (nonatomic,strong) NSMutableArray *dataSouce;
+@property (nonatomic,strong) NSMutableArray *rowHeightArray;
 
 @property (nonatomic , strong) MYFeedBackInputView *inputView;
 
@@ -34,7 +36,7 @@ static NSString *identify = @"MKJChatTableViewCell";
 
 - (void)setupUI {
     self.automaticallyAdjustsScrollViewInsets = NO;
-    UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, kScreenW, kScreenH - 64 - 30) style:UITableViewStylePlain];
+    UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, kScreenW, kScreenH - 64 - 30) style:UITableViewStyleGrouped];
     tableView.delegate = self;
     tableView.dataSource = self;
     tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
@@ -68,13 +70,14 @@ static NSString *identify = @"MKJChatTableViewCell";
     if (![self.inputView.textField.text isEqualToString:@""])
     {
         NSString *msg = self.inputView.textField.text;
+        CGRect rec = [msg boundingRectWithSize:CGSizeMake(kScreenW * 2 / 3, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName : [UIFont systemFontOfSize:k15]} context:nil];
+        [self.rowHeightArray addObject:NSStringFromCGRect(rec)];
         [self.dataSouce addObject:msg];
     }
     
-    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:self.dataSouce.count - 1 inSection:0];
-//    [self.tableView reloadRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:self.dataSouce.count - 1 inSection:0]] withRowAnimation:UITableViewRowAnimationFade];
+    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:self.dataSouce.count - 1];
     
-    [self.tableView reloadSections:[NSIndexSet indexSetWithIndex:0] withRowAnimation:UITableViewRowAnimationFade];
+    [self.tableView reloadData];
     
     if (self.dataSouce.count != 0) {
         [self.tableView scrollToRowAtIndexPath:indexPath atScrollPosition:UITableViewScrollPositionBottom animated:YES];
@@ -84,7 +87,6 @@ static NSString *identify = @"MKJChatTableViewCell";
 #pragma mark - notification  Atcion
 - (void)keyBoardShow:(NSNotification *)noti {
     CGRect rec = [noti.userInfo[UIKeyboardFrameEndUserInfoKey] CGRectValue];
-    NSLog(@"%@",NSStringFromCGRect(rec));
     
     CGRect tempRec = self.view.frame;
     tempRec.origin.y = - (rec.size.height) + 64;
@@ -93,7 +95,7 @@ static NSString *identify = @"MKJChatTableViewCell";
     self.tableView.frame = CGRectMake(0, rec.size.height, kScreenW, kScreenH - 64 - rec.size.height - inputViewHeight);
     if (self.dataSouce.count != 0)
     {
-        [self.tableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:self.dataSouce.count - 1 inSection:0] atScrollPosition:UITableViewScrollPositionBottom animated:YES];
+        [self.tableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:self.dataSouce.count - 1] atScrollPosition:UITableViewScrollPositionBottom animated:YES];
     }
 }
 
@@ -112,21 +114,35 @@ static NSString *identify = @"MKJChatTableViewCell";
 #pragma mark - UITableViewDataSource,UITableViewDelegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
+    return 1;
+}
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return self.dataSouce.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     MYFeedBackTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identify];
-    [cell refreshCell:self.dataSouce[indexPath.row]];
+    CGRect rec = CGRectFromString(self.rowHeightArray[indexPath.section]);
+    [cell refreshCell:self.dataSouce[indexPath.section] rec:rec];
     return cell;
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+    MYFeedBackHeaderView *view = [[MYFeedBackHeaderView alloc]initWithFrame:CGRectMake(0, 0, kScreenW, kScreenW / 15)];
+    return view;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+    return kScreenW / 15;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSString *msg = self.dataSouce[indexPath.row];
-    CGFloat height = [MYCalculateHeight calculateHeight:msg fontSize:k15];
-    return height + 45;
+    CGRect rec = CGRectFromString(self.rowHeightArray[indexPath.section]);
+    CGFloat height = rec.size.height;
+    return height + kScreenW / 7.5;
     
 }
 
@@ -136,6 +152,13 @@ static NSString *identify = @"MKJChatTableViewCell";
         _dataSouce = [[NSMutableArray alloc] init];
     }
     return _dataSouce;
+}
+
+- (NSMutableArray *)rowHeightArray {
+    if (!_rowHeightArray) {
+        _rowHeightArray = [NSMutableArray array];
+    }
+    return _rowHeightArray;
 }
 
 - (void)click:(UITapGestureRecognizer *)tap

@@ -12,6 +12,6 @@
 @property (nonatomic,strong) UIImageView *backView; // 气泡
 @property (nonatomic,strong) UILabel *contentLabel; // 气泡内文本
 
-- (void)refreshCell:(NSString *)msg; // 安装我们的cell
+- (void)refreshCell:(NSString *)msg rec:(CGRect)rec; // 安装我们的cell
 
 @end

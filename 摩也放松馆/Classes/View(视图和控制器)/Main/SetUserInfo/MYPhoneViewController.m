@@ -59,20 +59,12 @@
     
 }
 
-- (void)viewWillDisappear:(BOOL)animated {
-    [super viewWillDisappear:animated];
-    
-    
-    [self delegateAtcion];
-}
-
 - (void)nextbtnAtcion {
-    
-    
     MainViewController *mainVC = [[MainViewController alloc]init];
-    mainVC.model = self.model;
     
-    [kStanderDefault setObject:self.model forKey:@"UserInfoModel"];
+    NSArray *infoArray = @[self.model.sex , self.model.birthday , self.model.height , self.model.weight , self.model.phoneNumber];
+    
+    [kStanderDefault setObject:infoArray forKey:@"UserInfoModel"];
     
     [kStanderDefault setObject:@"NO" forKey:@"SetUserInfo"];
     kWindowRoot = mainVC;

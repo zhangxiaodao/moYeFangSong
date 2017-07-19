@@ -47,6 +47,7 @@
 		ED28A48A1F0F908C0033940C /* MYOperationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ED28A4891F0F908C0033940C /* MYOperationCell.m */; };
 		ED626FE01F1E003A00705484 /* MYFeedBackInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = ED626FDF1F1E003A00705484 /* MYFeedBackInputView.m */; };
 		ED626FE31F1E048500705484 /* MYFeedBackTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ED626FE21F1E048500705484 /* MYFeedBackTableViewCell.m */; };
+		ED626FE61F1EF46A00705484 /* MYFeedBackHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = ED626FE51F1EF46A00705484 /* MYFeedBackHeaderView.m */; };
 		ED65E0A01F0CD1EA00EE1F20 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ED65E09F1F0CD1EA00EE1F20 /* main.m */; };
 		ED65E0A31F0CD1EA00EE1F20 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ED65E0A21F0CD1EA00EE1F20 /* AppDelegate.m */; };
 		ED65E0A51F0CD1EA00EE1F20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED65E0A41F0CD1EA00EE1F20 /* Assets.xcassets */; };
@@ -172,6 +173,8 @@
 		ED626FDF1F1E003A00705484 /* MYFeedBackInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYFeedBackInputView.m; sourceTree = "<group>"; };
 		ED626FE11F1E048500705484 /* MYFeedBackTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYFeedBackTableViewCell.h; sourceTree = "<group>"; };
 		ED626FE21F1E048500705484 /* MYFeedBackTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYFeedBackTableViewCell.m; sourceTree = "<group>"; };
+		ED626FE41F1EF46A00705484 /* MYFeedBackHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYFeedBackHeaderView.h; sourceTree = "<group>"; };
+		ED626FE51F1EF46A00705484 /* MYFeedBackHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYFeedBackHeaderView.m; sourceTree = "<group>"; };
 		ED65E09B1F0CD1EA00EE1F20 /* 摩也放松馆.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "摩也放松馆.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED65E09F1F0CD1EA00EE1F20 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		ED65E0A11F0CD1EA00EE1F20 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -616,6 +619,8 @@
 				ED626FE21F1E048500705484 /* MYFeedBackTableViewCell.m */,
 				ED626FDE1F1E003A00705484 /* MYFeedBackInputView.h */,
 				ED626FDF1F1E003A00705484 /* MYFeedBackInputView.m */,
+				ED626FE41F1EF46A00705484 /* MYFeedBackHeaderView.h */,
+				ED626FE51F1EF46A00705484 /* MYFeedBackHeaderView.m */,
 			);
 			path = FeedBackVC;
 			sourceTree = "<group>";
@@ -834,6 +839,7 @@
 				ED28A4821F0F8B740033940C /* MYMainBaseViewController.m in Sources */,
 				ED28A43F1F0CDB4C0033940C /* UIColor+CZAddition.m in Sources */,
 				ED28A4391F0CDB4C0033940C /* NSAttributedString+CZAdditon.m in Sources */,
+				ED626FE61F1EF46A00705484 /* MYFeedBackHeaderView.m in Sources */,
 				ED28A4701F0F2B310033940C /* MYDividingRuleView.m in Sources */,
 				ED07F31D1F1DE3D8009E19A3 /* MYAboutViewHeaderView.m in Sources */,
 				ED28A4571F0DDAC80033940C /* MYNavViewController.m in Sources */,

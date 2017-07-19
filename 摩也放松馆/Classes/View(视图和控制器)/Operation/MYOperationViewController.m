@@ -55,8 +55,8 @@ static NSString *celled = @"MYOperationCell";
         workVC.typeArray = [NSArray arrayWithArray:self.secondArray];
         workVC.imageNameAy = [NSArray arrayWithArray:self.secondImageArray];
     } else {
-        [workVC.collectionView removeFromSuperview];
-        [workVC.btnView removeFromSuperview];
+        workVC.typeArray = @[];
+        workVC.imageNameAy = @[];
     }
     
     [self.navigationController pushViewController:workVC animated:YES];

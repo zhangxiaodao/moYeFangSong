@@ -48,7 +48,7 @@
     mypickerView.dataSource = self;
     self.mypickerView = mypickerView;
     
-    NSInteger integer = [self.yearArray indexOfObject:@"1987"];
+    NSInteger integer = [self.yearArray indexOfObject:@"1991"];
     [mypickerView selectRow:integer inComponent:0 animated:YES];
     
     NSArray *unitArray = @[@"年" , @"月" , @"日"];
